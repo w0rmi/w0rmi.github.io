@@ -52,6 +52,63 @@ The aim of this project was to create a properly functioning render graph that w
 - **Model loading.**
 
 
+## Code Structure
+
+``
+Croissant
+|
+|-- assets              
+|   |-- models              # Meshes and textures
+|   `-- skybox              # HDR files with their generated irradiance, prefiltered env. and BRDFlut textures
+|
+|-- bin                     # Contains the executable files
+|
+|-- build                   # CMake compile
+|
+|-- include                 # Project header files
+|   `-- Settings            # All user tweakable settings files(scene, camera, pipeline, etc)
+|
+|-- libs                    # Dependencies
+|   |-- ASSIMP
+|   |-- GLFW
+|   |-- GLI
+|   |-- GLM
+|   |-- Dear imgui           
+|   |-- stb_image
+|   |-- tracy
+|   |-- Vulkan-Loader            
+|   `-- Vulkan-Tools
+|
+|-- shaders
+|
+|-- src                     # C++ implementation files
+|   |-- Buffer
+|   |-- Camera
+|   |-- Command
+|   |-- Computation
+|   |-- Descriptor
+|   |-- Device
+|   |-- Features
+|   |-- Framebuffer
+|   |-- GUI
+|   |-- Image
+|   |-- Math
+|   |-- Model
+|   |-- Pipeline
+|   |-- Queue
+|   |-- Renderer
+|   |-- RenderPass
+|   |-- Scene
+|   |-- Shader
+|   |-- Swapchain
+|   |-- Texture
+|   |-- VkInstance
+|   `-- Window
+|   
+`-- CMakeLists.txt          # CMake build script
+``
+
+
 ### Content Creation & Management
 - **New Post Dialog**: When enabled, prompts for a title when creating new Markdown files via Obsidian's "New note" action, auto-generating kebab-case filenames (e.g., "My Blog Post" → `my-blog-post.md`) and optionally inserting properties with `title`, `date`, etc.
 - **Property Standardization**: Updates a note's properties to match a customizable template using the "Standardize Properties" command. Preserves existing property values, adds missing properties from the template in the specified order, and appends unrecognized properties at the end.

@@ -25,27 +25,31 @@ The aim of this project was to create a properly functioning render graph that w
 ## Render Samples
 
 ![alt](https://user-images.githubusercontent.com/19228971/208722571-807d33d1-5da5-4118-9529-bf0ed000291f.png)
-![alt](https://astro.build/_image?href=https%3A%2F%2Fstorage.googleapis.com%2Fdev-portal-bucket%2Flgdtfaxue9ja74r6bg4lgmupkgnl02k16wjf9f.webp&w=1600&h=900&f=webp&dpl=69ad518e6aca060008197224)
+![alt](https://user-images.githubusercontent.com/19228971/208724316-87dfa63a-009f-4d35-baeb-b79d53ebc0b4.png)
+![alt](https://user-images.githubusercontent.com/19228971/209079610-2f5d3d81-85b4-43af-8cb9-ee51745c7f61.png)
+![alt](https://user-images.githubusercontent.com/19228971/209082602-83f74c8c-82e8-473e-ab07-cc3728794cad.png)
+![alt](https://user-images.githubusercontent.com/19228971/209096509-659410ea-839a-4508-a0bd-b3f551afb9a8.png)
+![alt](https://user-images.githubusercontent.com/19228971/220130551-4b028896-ffc6-4489-898e-e9c5822541ec.png)
 
 ## Features
 
 - **Physically based rendering(Cook–Torrance BRDF).**
 - **Image based lighting.**
-- Forward rendering.
-- Multisample anti-aliasing (MSAA).
-- HDRI skymap loading.
-- Compute shaders.
-- Shadow mapping.
-- Normal mapping.
-- Different light types (directional, point and spot lights).
-- Texture mipmaps.
-- Arcball camera.
-- GUI.
+- **Forward rendering.**
+- **Multisample anti-aliasing (MSAA).**
+- **HDRI skymap loading.**
+- **Compute shaders.**
+- **Shadow mapping.**
+- **Normal mapping.**
+- **Different light types (directional, point and spot lights).**
+- **Texture mipmaps.**
+- **Arcball camera.**
+- **GUI.**
 
 ### Other Features
 
-- Multi-threaded texture asset importing
-- Model loading
+- **Multi-threaded texture asset importing.**
+- **Model loading.**
 
 
 ### Content Creation & Management

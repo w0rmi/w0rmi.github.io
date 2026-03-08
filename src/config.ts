@@ -187,7 +187,7 @@ export const siteConfig: SiteConfig = {
   // [CONFIG:SITE_TITLE]
   title: "w0rmi",
   // [CONFIG:HOMEPAGE_TITLE]
-  homepageTitle: "",
+  homepageTitle: "w0rmii",
   // [CONFIG:SITE_DESCRIPTION]
   description: "A flexible blog theme designed for Obsidian users.",
   // [CONFIG:SITE_AUTHOR]

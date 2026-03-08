@@ -1,13 +1,13 @@
 ---
-title: Astro Composer
-description: An Obsidian plugin to create and manage Astro blog posts easily with automated file renaming, note properties management, and internal link conversion.
-date: 2025-08-20
+title: Croissant - Real-Time Vulkan Renderer
+description: Real-time vulkan renderer with features like PBR, IBL and more.
+date: 2023-03-02
 categories:
   - Obsidian
   - Astro
   - Plugin
 repositoryUrl:
-projectUrl: https://github.com/davidvkimball/obsidian-astro-composer
+projectUrl: https://github.com/w0rmi/CroissantVulkanRenderer
 status: in-progress
 image: "[[attachments/rock.png]]"
 imageAlt: Gray, rocky wall
@@ -18,11 +18,35 @@ featured: true
 aliases:
   - obsidian-astro-composer
 ---
-## Project Overview
+## About
 
-Astro Composer is an Obsidian plugin that turns your Obsidian notes into posts and pages for your Astro blog with automated content management features. Part of the [Vault CMS](projects/vault-cms/index.md) project, it provides seamless integration between Obsidian note-taking and Astro publishing workflows.
+The aim of this project was to create a properly functioning render graph that would allow me to learn and experiment with Vulkan, as well as provide an opportunity to learn graphics techniques.
 
-## Key Features
+## Render Samples
+
+![alt](https://user-images.githubusercontent.com/19228971/208722571-807d33d1-5da5-4118-9529-bf0ed000291f.png)
+![alt](https://astro.build/_image?href=https%3A%2F%2Fstorage.googleapis.com%2Fdev-portal-bucket%2Flgdtfaxue9ja74r6bg4lgmupkgnl02k16wjf9f.webp&w=1600&h=900&f=webp&dpl=69ad518e6aca060008197224)
+
+## Features
+
+- **Physically based rendering(Cook–Torrance BRDF).**
+- **Image based lighting.**
+- Forward rendering.
+- Multisample anti-aliasing (MSAA).
+- HDRI skymap loading.
+- Compute shaders.
+- Shadow mapping.
+- Normal mapping.
+- Different light types (directional, point and spot lights).
+- Texture mipmaps.
+- Arcball camera.
+- GUI.
+
+### Other Features
+
+- Multi-threaded texture asset importing
+- Model loading
+
 
 ### Content Creation & Management
 - **New Post Dialog**: When enabled, prompts for a title when creating new Markdown files via Obsidian's "New note" action, auto-generating kebab-case filenames (e.g., "My Blog Post" → `my-blog-post.md`) and optionally inserting properties with `title`, `date`, etc.

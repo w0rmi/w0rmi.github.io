@@ -27,12 +27,12 @@ The aim of this project was to create a properly functioning render graph that w
 ![alt](https://user-images.githubusercontent.com/19228971/208722571-807d33d1-5da5-4118-9529-bf0ed000291f.png)
 
 ---
+s
 ![alt](https://user-images.githubusercontent.com/19228971/208724316-87dfa63a-009f-4d35-baeb-b79d53ebc0b4.png)
 ![alt](https://user-images.githubusercontent.com/19228971/209079610-2f5d3d81-85b4-43af-8cb9-ee51745c7f61.png)
 ![alt](https://user-images.githubusercontent.com/19228971/209082602-83f74c8c-82e8-473e-ab07-cc3728794cad.png)
 ![alt](https://user-images.githubusercontent.com/19228971/209096509-659410ea-839a-4508-a0bd-b3f551afb9a8.png)
 ![alt](https://user-images.githubusercontent.com/19228971/220130551-4b028896-ffc6-4489-898e-e9c5822541ec.png)
----
 
 ## Features
 
@@ -135,7 +135,7 @@ Here's the list of the libraries included in the project:
 
 ## Usage
 
-```C++
+```cpp
 /* Commands:
 *   
 *   - addSkybox(fileName, folderName);
@@ -193,24 +193,30 @@ int main()
 }
 ```
 
-## Technical Implementation
+## Controls
 
-Built with TypeScript and following Obsidian's plugin development best practices, the plugin integrates seamlessly with Obsidian's file system and provides a smooth user experience for content creators. It supports both file-based (`my-post.md`) and folder-based (`my-post/index.md`) post structures, making it flexible for different Astro setups.
+| **Input**    | **Action**     |
+| ---------    | ---------      |
+| RMB drag     | Rotate Camera  |
+| Scroll wheel | Zoom in/out    |
 
-## Installation
+## Dependencies
 
-Astro Composer is not yet available in the Community plugins section. Install using BRAT or manually:
+- ** cmake >= 3.9.1 **
+- ** gcc >= 9.4.0 **
+- ** vulkan-validationlayers-dev **
+- ** spirv-tools **
+- ** glslc **
 
-### BRAT (Recommended)
-1. Download the Beta Reviewers Auto-update Tester (BRAT) plugin from the Obsidian community plugins directory and enable it
-2. In the BRAT plugin settings, select `Add beta plugin`
-3. Paste: `https://github.com/davidvkimball/obsidian-astro-composer` and select `Add plugin`
+## Building on Linux
 
-### Manual Installation
-1. Download the latest release from the Releases page
-2. Navigate to your Obsidian vault's `.obsidian/plugins/` directory
-3. Create a new folder called `astro-composer` and ensure `manifest.json`, `main.js`, and `styles.css` are in there
-4. In Obsidian, go to Settings > Community plugins and enable "Astro Composer"
+```
+$ git clone --recurse-submodules https://github.com/SaferGo/CroissantVulkanRenderer.git
+$ cd CroissantVulkanRenderer/build
+$ bash buildReleaseMode.sh
+// or buildDebugMode.sh
+
+```
 
 ## Usage
 

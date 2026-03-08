@@ -25,11 +25,14 @@ The aim of this project was to create a properly functioning render graph that w
 ## Render Samples
 
 ![alt](https://user-images.githubusercontent.com/19228971/208722571-807d33d1-5da5-4118-9529-bf0ed000291f.png)
+
+---
 ![alt](https://user-images.githubusercontent.com/19228971/208724316-87dfa63a-009f-4d35-baeb-b79d53ebc0b4.png)
 ![alt](https://user-images.githubusercontent.com/19228971/209079610-2f5d3d81-85b4-43af-8cb9-ee51745c7f61.png)
 ![alt](https://user-images.githubusercontent.com/19228971/209082602-83f74c8c-82e8-473e-ab07-cc3728794cad.png)
 ![alt](https://user-images.githubusercontent.com/19228971/209096509-659410ea-839a-4508-a0bd-b3f551afb9a8.png)
 ![alt](https://user-images.githubusercontent.com/19228971/220130551-4b028896-ffc6-4489-898e-e9c5822541ec.png)
+---
 
 ## Features
 
@@ -54,7 +57,7 @@ The aim of this project was to create a properly functioning render graph that w
 
 ## Code Structure
 
-``
+```
 Croissant
 |
 |-- assets              
@@ -106,27 +109,89 @@ Croissant
 |   `-- Window
 |   
 `-- CMakeLists.txt          # CMake build script
-``
+```
 
 
-### Content Creation & Management
-- **New Post Dialog**: When enabled, prompts for a title when creating new Markdown files via Obsidian's "New note" action, auto-generating kebab-case filenames (e.g., "My Blog Post" → `my-blog-post.md`) and optionally inserting properties with `title`, `date`, etc.
-- **Property Standardization**: Updates a note's properties to match a customizable template using the "Standardize Properties" command. Preserves existing property values, adds missing properties from the template in the specified order, and appends unrecognized properties at the end.
-- **Rename Post Command**: Easily rename your notes by updating the title property with the desired post name, and get a kebab-case file or folder update afterward.
+## Third Party Libraries
 
-### Draft Management
-- **Underscore Prefix**: Optionally adds an underscore prefix (e.g., `_my-post.md`) to hide drafts from Astro, configurable via settings.
+Here's the list of the libraries included in the project:
 
-### Link Conversion
-- **Internal Link Conversion**: Converts Obsidian wikilinks and markdown internal links (`[[My Post]]` or `[My Post](my-post)`) to Astro-friendly Markdown links (`[My Post](/blog/my-post/)`), supporting both file-based and folder-based post structures.
+- **ASSIMP**: Mesh and material loading.
+- **GLFW**: A multi-platform library for window and input.
+- **GLI**: Image library(used to generate the BRDFlut texture).
+- **GLM**: Mathematics library fro graphics software.
+- **ImGui**: GUI.
+- **stb_image**: Image encoding/decoding.
+- **Tracy**: Frame profiler.
+- **Vulkan-Loader**
+- **Vulkan-Tools**: Validation Layers.
 
-### Multi-Content Type Support
-- **Pages, Docs, Projects**: With "Enable pages" enabled and by creating custom content types, you can do the same automation behavior for any other content type, like pages, documentation, projects, etc.
+## Render Graph
 
-### Configurable Workflow
-- **Customizable Settings**: Configure posts folder, link base path, creation mode (file-based or folder-based with `index.md`), date format, and excluded directories
-- **Selective Automation**: Enable or disable automation for new notes and properties insertion independently
-- **Robust Automation**: Only triggers the title dialog for user-initiated new notes (e.g., via "New note" command), avoiding unwanted prompts during vault loading or file imports (e.g., via git pull)
+![alt](https://user-images.githubusercontent.com/19228971/209051311-cfe64c87-710d-4b91-aeb9-86c881e39406.png)
+
+![alt](https://user-images.githubusercontent.com/19228971/209051351-86eb79c7-b32f-44f4-b185-132790dc7297.png)
+
+
+## Usage
+
+```C++
+/* Commands:
+*   
+*   - addSkybox(fileName, folderName);
+*   - addObjectPBR(name, folderName, fileName, position, rotation, size);
+*   - addDirectionalLight(name, folderName, fileName, color, position, targetPosition, size);
+*   - addSpotLight(name, folderName, fileName, color, position, targetPosition, rotation, size);
+*   - addPointLight(name, folderName, fileName, color, position, size);
+*
+*   - demo1(); // Damaged Helmet
+*   - demo2(); // AK 47
+*   - demo3(); // Collier Flintlock Revolver
+*   - demo4(); // Sponza day
+*   - demo5(); // Sponza night
+*   - demo6(); // Metal Rough Spheres
+*/
+
+int main()
+{
+   Renderer app;
+
+   try
+   {
+      // Scene
+      {
+         app.addSkybox("fileName.hdr", "folderName");
+         app.addObjectPBR(
+               "name",
+               "folderName",
+               "fileName",
+               glm::fvec3(0.0f), // Position
+               glm::fvec3(0.0f), // Rotation
+               glm::fvec3(1.0f)  // Size
+         );
+         app.addDirectionalLight(
+               "name",
+               "folderName",
+               "fileName",
+               glm::fvec3(1.0f), // Color
+               glm::fvec3(0.0f), // Position
+               glm::fvec3(1.0f), // Target Position
+               glm::fvec3(1.0f)  // Size
+         );
+      }
+
+      app.run();
+
+   } catch (const std::exception& e)
+   {
+      std::cerr << e.what() << "\n";
+
+      return 0;
+   }
+
+   return 0;
+}
+```
 
 ## Technical Implementation
 

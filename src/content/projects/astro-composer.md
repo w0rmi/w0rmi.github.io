@@ -20,10 +20,6 @@ aliases:
 ---
 
 
-|  | |  |
-| -------- | -------- | ------- |
-| ![alt](https://img.shields.io/badge/platforms-Linux-brightgreen) |  ![alt](https://img.shields.io/badge/language-C%2B%2B17-brightgreen)  | ![alt](https://img.shields.io/github/license/inexorgame/vulkan-renderer?color=brightgreen) |
-
 | ![alt](https://img.shields.io/badge/platforms-Linux-brightgreen) |  ![alt](https://img.shields.io/badge/language-C%2B%2B17-brightgreen)  | ![alt](https://img.shields.io/github/license/inexorgame/vulkan-renderer?color=brightgreen) |
 | -------- | -------- | ------- |
 

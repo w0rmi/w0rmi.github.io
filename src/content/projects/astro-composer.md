@@ -116,7 +116,7 @@ Croissant
 
 Here's the list of the libraries included in the project:
 
-- **ASSIMP**: Mesh and material loading.
+- **[ASSIMP](https://github.com/assimp/assimp)**: Mesh and material loading.
 - **GLFW**: A multi-platform library for window and input.
 - **GLI**: Image library(used to generate the BRDFlut texture).
 - **GLM**: Mathematics library fro graphics software.
@@ -221,19 +221,19 @@ After a successful build, the resulting executable can be found in the bin direc
 
 ## Tested Toolchains
 
-| **Compiler** |            **Operating System**           | ** Architecture ** |
+| **Compiler** |            **Operating System**           | **Architecture** |
 | ---------    | ----------------------------------------- | ------------------ |
 | GCC 9.4.0    | Linux Ubuntu 20.04.4 with kernel 5.8.0-53 | x64                |
 
 ## References
 
-- Vulkan Tutorial.
-- 3D Graphics Rendering Cookbook: A comprehensive guide to exploring rendering algorithms in modern OpenGL and Vulkan.
-- Vulkan Cookbook: Solutions to next gen 3D graphics API.
-- Hybrid Rendering Engine by Angelo1211.
-- Vulkan physically-Based Rendering by SaschaWillems.
-- Shadow Mapping in Vulkan by igalia.
-- Integrating Dear ImGui in a custom Vulkan renderer.
+- [Vulkan Tutorial](https://vulkan-tutorial.com/).
+- [3D Graphics Rendering Cookbook: A comprehensive guide to exploring rendering algorithms in modern OpenGL and Vulkan.](https://www.amazon.de/dp/1838986197)
+- [Vulkan Cookbook: Solutions to next gen 3D graphics API.](https://www.amazon.de/dp/1786468158)
+- [Hybrid Rendering Engine by Angelo1211.](https://github.com/Angelo1211/HybridRenderingEngine)
+- [Vulkan physically-Based Rendering by SaschaWillems.](https://github.com/SaschaWillems/Vulkan-glTF-PBR)
+- [Shadow Mapping in Vulkan by igalia.](https://blogs.igalia.com/itoral/2017/07/30/working-with-lights-and-shadows-part-ii-the-shadow-map/)
+- [Integrating Dear ImGui in a custom Vulkan renderer.](https://frguthmann.github.io/posts/vulkan_imgui/)
 
 ## Included Assets
 
@@ -247,12 +247,12 @@ The following assets are bundled with the project:
 
 ### - Models
 
-- Cube from Cesium (distributed under Creative Commons Attribution 4.0 International License).
-- Damaged Helmet from theblueturtle_ (distributed under Creative Commons Attribution-Noncommercial-Share Alike 3.0 License).
-- Sponza from alexandre-pestana.
-- Metal Rough Spheres from Analytical Graphics (distributed under CC-BY 4.0).
-- AK 47 Tactical Upgrade from Mateusz Woliński (distributed under CC-BY 4.0).
-- Collier Flintlock Revolver from Artem Goyko (distributed under CC-BY 4.0).
+- Cube from [Cesium](https://cesium.com/) (distributed under [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/)).
+- Damaged Helmet from [theblueturtle_](https://sketchfab.com/theblueturtle_)(distributed under [Creative Commons Attribution-Noncommercial-Share Alike 3.0 License](https://creativecommons.org/licenses/by-nc-sa/3.0/us/)).
+- Sponza from [alexandre-pestana](https://www.alexandre-pestana.com/).
+- Metal Rough Spheres from Analytical Graphics (distributed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)).
+- AK 47 Tactical Upgrade from [Mateusz Woliński](https://sketchfab.com/jeandiz) (distributed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)).
+- Collier Flintlock Revolver from [Artem Goyko](https://sketchfab.com/Artem.Goyko) (distributed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)).
 
 <a href="https://github.com/w0rmi/CroissantVulkanRenderer" class="no-styling no-underline" target="_blank"><button class="btn btn-primary w-full">  
     View Project  

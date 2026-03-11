@@ -18,6 +18,18 @@ featured: true
 aliases:
   - obsidian-astro-composer
 ---
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/19228971/208704463-5fc58dc3-59a2-4814-b315-0f5835a4a155.png">
+</p>
+<h1 align="center"> Croissant - Real-Time Vulkan Renderer</h1>
+<p align="center">
+  <img src="https://img.shields.io/badge/language-C%2B%2B17-brightgreen">
+  <img src="https://img.shields.io/badge/platforms-Linux-brightgreen">
+  <img src="https://img.shields.io/github/license/inexorgame/vulkan-renderer?color=brightgreen">
+</p>
+<p align="center"> Real-time, Physically based renderer built with Vulkan and modern C++17.</p>
+
 ## About
 
 The aim of this project was to create a properly functioning render graph that would allow me to learn and experiment with Vulkan, as well as provide an opportunity to learn graphics techniques.
@@ -117,14 +129,14 @@ Croissant
 Here's the list of the libraries included in the project:
 
 - **[ASSIMP](https://github.com/assimp/assimp)**: Mesh and material loading.
-- **GLFW**: A multi-platform library for window and input.
-- **GLI**: Image library(used to generate the BRDFlut texture).
-- **GLM**: Mathematics library fro graphics software.
-- **ImGui**: GUI.
-- **stb_image**: Image encoding/decoding.
-- **Tracy**: Frame profiler.
-- **Vulkan-Loader**
-- **Vulkan-Tools**: Validation Layers.
+- **[GLFW](https://github.com/glfw/glfw)**: A multi-platform library for window and input.
+- **[GLI](https://github.com/g-truc/gli)**: Image library(used to generate the BRDFlut texture).
+- **[GLM](https://github.com/g-truc/glm)**: Mathematics library fro graphics software.
+- **[ImGui](https://github.com/ocornut/imgui)**: GUI.
+- **[stb_image](https://github.com/nothings/stb)**: Image encoding/decoding.
+- **[Tracy](https://github.com/wolfpld/tracy)**: Frame profiler.
+- **[Vulkan-Loader](https://github.com/KhronosGroup/Vulkan-Loader)**
+- **[Vulkan-Tools](https://github.com/KhronosGroup/Vulkan-Tools)**: Validation Layers.
 
 ## Render Graph
 

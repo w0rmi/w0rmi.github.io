@@ -9,7 +9,7 @@ categories:
 repositoryUrl:
 projectUrl: https://github.com/w0rmi/CroissantVulkanRenderer
 status: in-progress
-image: "[[attachments/rock.png]]"
+image: "[[https://user-images.githubusercontent.com/19228971/208704463-5fc58dc3-59a2-4814-b315-0f5835a4a155.png]]"
 imageAlt: Gray, rocky wall
 hideCoverImage: false
 hideTOC: false

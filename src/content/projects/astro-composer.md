@@ -217,26 +217,40 @@ $ bash buildReleaseMode.sh
 // or buildDebugMode.sh
 
 ```
+After a successful build, the resulting executable can be found in the bin directory.
 
-## Usage
+## Tested Toolchains
 
-1. **Customize Settings**: In **Settings > Astro Composer**, configure automation, properties template, posts folder, creation mode, and more
-2. **Standardize Properties**: Use the `Astro Composer: Standardize Properties` command to update a note's properties to the relevant content type
-3. **Convert Internal Links**: Use the `Astro Composer: Convert internal links for Astro` command to transform Obsidian wikilinks and internal Markdown links into Astro-compatible Markdown links
-4. **Rename Content**: Using the `Astro Composer: Rename Current Note` command, set the title of your content and have the file or parent folder get automatically renamed with the kebab-case version
+| **Compiler** |            **Operating System**           | ** Architecture ** |
+| ---------    | ----------------------------------------- | ------------------ |
+| GCC 9.4.0    | Linux Ubuntu 20.04.4 with kernel 5.8.0-53 | x64                |
 
-## Use Cases
+## References
 
-- **Content Creators**: Streamline the process of creating and managing blog posts, pages, and documentation
-- **Astro Developers**: Bridge the gap between Obsidian note-taking and Astro publishing
-- **Technical Writers**: Maintain consistent formatting and file organization across multiple content types
-- **Bloggers**: Focus on content creation rather than file management and slug generation
-- **Vault CMS Users**: Core automation component for the complete Obsidian-to-Astro workflow
+- Vulkan Tutorial.
+- 3D Graphics Rendering Cookbook: A comprehensive guide to exploring rendering algorithms in modern OpenGL and Vulkan.
+- Vulkan Cookbook: Solutions to next gen 3D graphics API.
+- Hybrid Rendering Engine by Angelo1211.
+- Vulkan physically-Based Rendering by SaschaWillems.
+- Shadow Mapping in Vulkan by igalia.
+- Integrating Dear ImGui in a custom Vulkan renderer.
 
-## Project Status
+## Included Assets
 
-This project is actively maintained and in-progress. The latest version includes robust automation features, comprehensive configuration options for various Astro workflows, and support for multiple content types beyond just posts.
+The following assets are bundled with the project:
 
-<a href="https://github.com/davidvkimball/obsidian-astro-composer" class="no-styling no-underline" target="_blank"><button class="btn btn-primary w-full">  
+### - HDRs
+    - Winter Forest and Apartment from ihdri.
+    - Country Club, Farm Field, Neon Photostudio, Peppermint Powerplant 2 and Shangai Bund from PolyHaven (distributed under CC0).
+    - Arches PineTree from HdrLabs (distributed under Creative Commons Attribution-Noncommercial-Share Alike 3.0 License).
+### - Models
+    - Cube from Cesium (distributed under Creative Commons Attribution 4.0 International License).
+    - Damaged Helmet from theblueturtle_ (distributed under Creative Commons Attribution-Noncommercial-Share Alike 3.0 License).
+    - Sponza from alexandre-pestana.
+    - Metal Rough Spheres from Analytical Graphics (distributed under CC-BY 4.0).
+    - AK 47 Tactical Upgrade from Mateusz Woliński (distributed under CC-BY 4.0).
+    - Collier Flintlock Revolver from Artem Goyko (distributed under CC-BY 4.0).
+
+<a href="https://github.com/w0rmi/CroissantVulkanRenderer" class="no-styling no-underline" target="_blank"><button class="btn btn-primary w-full">  
     View Project  
   </button></a>

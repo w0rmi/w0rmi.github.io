@@ -240,16 +240,19 @@ After a successful build, the resulting executable can be found in the bin direc
 The following assets are bundled with the project:
 
 ### - HDRs
-    - Winter Forest and Apartment from ihdri.
-    - Country Club, Farm Field, Neon Photostudio, Peppermint Powerplant 2 and Shangai Bund from PolyHaven (distributed under CC0).
-    - Arches PineTree from HdrLabs (distributed under Creative Commons Attribution-Noncommercial-Share Alike 3.0 License).
+
+- Winter Forest and Apartment from [ihdri](https://polyhaven.com/hdris).
+- Country Club, Farm Field, Neon Photostudio, Peppermint Powerplant 2 and Shangai Bund from [PolyHaven](https://polyhaven.com/) (distributed under [CC0](https://polyhaven.com/license)).
+- Arches PineTree from [HdrLabs](https://hdrlabs.com/)(distributed under [Creative Commons Attribution-Noncommercial-Share Alike 3.0 License](https://creativecommons.org/licenses/by-nc-sa/3.0/us/)).
+
 ### - Models
-    - Cube from Cesium (distributed under Creative Commons Attribution 4.0 International License).
-    - Damaged Helmet from theblueturtle_ (distributed under Creative Commons Attribution-Noncommercial-Share Alike 3.0 License).
-    - Sponza from alexandre-pestana.
-    - Metal Rough Spheres from Analytical Graphics (distributed under CC-BY 4.0).
-    - AK 47 Tactical Upgrade from Mateusz Woliński (distributed under CC-BY 4.0).
-    - Collier Flintlock Revolver from Artem Goyko (distributed under CC-BY 4.0).
+
+- Cube from Cesium (distributed under Creative Commons Attribution 4.0 International License).
+- Damaged Helmet from theblueturtle_ (distributed under Creative Commons Attribution-Noncommercial-Share Alike 3.0 License).
+- Sponza from alexandre-pestana.
+- Metal Rough Spheres from Analytical Graphics (distributed under CC-BY 4.0).
+- AK 47 Tactical Upgrade from Mateusz Woliński (distributed under CC-BY 4.0).
+- Collier Flintlock Revolver from Artem Goyko (distributed under CC-BY 4.0).
 
 <a href="https://github.com/w0rmi/CroissantVulkanRenderer" class="no-styling no-underline" target="_blank"><button class="btn btn-primary w-full">  
     View Project  

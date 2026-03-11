@@ -19,14 +19,15 @@ aliases:
   - obsidian-astro-composer
 ---
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/19228971/208704463-5fc58dc3-59a2-4814-b315-0f5835a4a155.png">
-</p>
-<p align="center">
-  <img src="https://img.shields.io/badge/language-C%2B%2B17-brightgreen" style="width: 50%;">
-  <img src="https://img.shields.io/badge/platforms-Linux-brightgreen" style="width: 50%;">
-  <img src="https://img.shields.io/github/license/inexorgame/vulkan-renderer?color=brightgreen" style="width: 50%;">
-</p>
+
+| **Compiler** |            **Operating System**           | **Architecture** |
+| ---------    | ----------------------------------------- | ------------------ |
+|  ![alt](https://img.shields.io/badge/language-C%2B%2B17-brightgreen)   | Linux Ubuntu 20.04.4 with kernel 5.8.0-53 | x64                |
+
+![alt](https://img.shields.io/badge/language-C%2B%2B17-brightgreen)
+![alt](https://img.shields.io/badge/platforms-Linux-brightgreen)
+![alt](https://img.shields.io/github/license/inexorgame/vulkan-renderer?color=brightgreen)
+
 <p align="center"> Real-time, Physically based renderer built with Vulkan and modern C++17.</p>
 
 ## About

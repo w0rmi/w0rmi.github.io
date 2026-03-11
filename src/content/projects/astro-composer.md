@@ -20,9 +20,13 @@ aliases:
 ---
 
 
-| **Compiler** |            **Operating System**           | **Architecture** |
+|  |                       |  |
+| ---------    | ----------------------------------------- | ------------------ |
+| ![alt](https://img.shields.io/badge/platforms-Linux-brightgreen) |  ![alt](https://img.shields.io/badge/language-C%2B%2B17-brightgreen)  | ![alt](https://img.shields.io/badge/platforms-Linux-brightgreen) |
+
 | ---------    | ----------------------------------------- | ------------------ |
 |  ![alt](https://img.shields.io/badge/language-C%2B%2B17-brightgreen)   | Linux Ubuntu 20.04.4 with kernel 5.8.0-53 | x64                |
+
 
 ![alt](https://img.shields.io/badge/language-C%2B%2B17-brightgreen)
 ![alt](https://img.shields.io/badge/platforms-Linux-brightgreen)

@@ -1,7 +1,7 @@
 ---
 title: Boid Simulation
 description: Boid flocking simulation made with OpenGL, SDL2 and ImGui.
-date: 2025-08-25
+date: 2022-07-28
 categories:
   - ComputerGraphics
   - OpenGL

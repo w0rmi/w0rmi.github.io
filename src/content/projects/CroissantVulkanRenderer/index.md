@@ -16,7 +16,7 @@ hideTOC: false
 draft: false
 featured: true
 aliases:
-  - obsidian-astro-composer
+  - project-croissant
 ---
 
 

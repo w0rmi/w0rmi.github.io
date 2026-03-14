@@ -8,7 +8,7 @@ categories:
   - C++
 repositoryUrl:
 projectUrl: https://github.com/w0rmi/BoidSimulationOpenGL
-status: in-progress
+status: completed
 image: "[[https://user-images.githubusercontent.com/19228971/170995953-f7a6fd86-b46c-4d9f-89d8-4b71b1fdddbd.gif]]"
 hideCoverImage: false
 hideTOC: false
@@ -20,11 +20,6 @@ aliases:
 ## Project Overview
 
 Hey there! This is my implementation of a boid flocking simulation in OpenGL.
-
-## Preview
-
-[[https://user-images.githubusercontent.com/19228971/170995953-f7a6fd86-b46c-4d9f-89d8-4b71b1fdddbd.gif]]
-
 
 ## Features
 

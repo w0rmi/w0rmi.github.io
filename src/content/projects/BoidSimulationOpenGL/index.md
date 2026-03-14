@@ -9,101 +9,57 @@ categories:
 repositoryUrl:
 projectUrl: https://github.com/w0rmi/BoidSimulationOpenGL
 status: in-progress
-image: "[[glacier.png]]"
-imageAlt: Blue glaciers and mountains.
+image: "[[https://user-images.githubusercontent.com/19228971/170995953-f7a6fd86-b46c-4d9f-89d8-4b71b1fdddbd.gif]]"
 hideCoverImage: false
 hideTOC: false
 draft: false
 featured: true
 aliases:
-  - obsidian-astro-suite
+  - project-boids
 ---
 ## Project Overview
 
-Vault CMS (formerly Obsidian Astro Suite) is a collection of pre-configured Obsidian vaults designed to seamlessly integrate with Astro static sites. It provides a complete content management solution that bridges the gap between note-taking and web publishing, with three optimized vault options: **Default**, **Minimal**, and **Docs**.
+Hey there! This is my implementation of a boid flocking simulation in OpenGL.
 
-## Philosophy
+## Preview
 
-Vault CMS is built on three core principles:
+[[https://user-images.githubusercontent.com/19228971/170995953-f7a6fd86-b46c-4d9f-89d8-4b71b1fdddbd.gif]]
 
-1. **Plug-and-play Astro blogging experience** - Pre-configured vaults ready for immediate use
-2. **Emphasis on customization and modularity** - Flexible configuration for different use cases
-3. **Visual parity between backend and frontend** - Seamless workflow from Obsidian to Astro publishing
 
-## Vault Options
+## Features
 
-### Default
-Optimized for general-purpose Astro blogs, configured for the Slate blog theme.
+- **Different species.**
+- **Obstacles.**
+- **GUI.**
+- **And a lot more that can be changed in the config.h file.**
 
-### Minimal
-Optimized for minimal Astro themes, prioritizing visual minimalism and distraction-free writing, configured for the Chiri theme.
+## Environment
 
-### Docs
-Optimized for Starlight and other documentation-focused Astro themes.
+- **Linux**
+- **C++17**
+- **OpenGL(GLAD)**
+- **GLM**
+- **ImGUI**
+- **SDL2**
 
-## Included Community Plugins
+## Prerequisites
 
-### Core Content Management
-- **Astro Composer**: Automated post creation and management with kebab-case slug generation
-- **Bases CMS**: CMS-like homepage using Obsidian Bases for content management
-- **Homepage**: Customizable homepage experience
-- **Default New Tab Page**: CMS-like directory view of all blog posts
+- **g++**
+- **CMake >= 3.91**
+- **SDL2 >= 2.0.10**
 
-### Image & Media Management
-- **Image Inserter**: Pull images from Unsplash or other sources with `CTRL + '`
-- **Paste Image Rename**: Automatic kebab-case, SEO-friendly image renaming
-- **Paste Image Into Property**: Insert images directly into frontmatter properties
+## Documentation
 
-### Content Organization
-- **Property Over Filename**: Use `title` property as primary identifier instead of filename
-- **Tag Wrangler**: Bulk tag management and organization
+- **[https://www.red3d.com/cwr/boids/](https://www.red3d.com/cwr/boids/)**
 
-### Writing & Editing
-- **Editing Toolbar**: Microsoft Word-style toolbar for markdown editing
-- **SEO**: Content audit tool for search engine optimization
-- **Simple Banner**: Automatic banner display for posts with cover images
+### How to run it
 
-### Theme & Customization
-- **Simple Focus**: Simplify file explorer to relevant directories
-- **Zen Mode**: Full-screen writing mode (`CTRL + SHIFT + Z`)
-- **Status Bar Organizer**: Customize status bar layout
+```
+$ git clone https://github.com/SaferGo/boid-simulation-opengl.git
+$ cd boid-simulation-opengl
+$ bash run.sh
+```
 
-### Publishing & Workflow
-- **Git**: Optional instant-publish functionality via Git plugin (`CTRL + SHIFT + S`)
-- **Settings Search**: Global search for all Obsidian settings
-
-## Key Features
-
-- **Plug-and-Play Setup**: Pre-configured vaults ready for immediate use with optimized plugins and settings
-- **CMS-Like Homepage**: "Home Base" view showing all posts in reverse-chronological order with bulk editing
-- **Astro Integration**: Seamless workflow from Obsidian to Astro publishing without link conversion
-- **Optimized Hotkeys**: Custom keyboard shortcuts designed for Astro workflows (see [Vault Guide](/posts/vault-cms-guide))
-- **Git Integration**: Optional instant-publish functionality via Git plugin
-- **Visual Parity**: Oxygen theme matches frontend styling for consistent experience
-
-## Default Settings
-
-- Markdown links used in favor of wikilinks
-- Default location for new notes set per-vault
-- Indentation guides disabled
-- Custom hotkeys optimized for Astro workflows
-
-## Technical Implementation
-
-The suite is built on Obsidian's plugin ecosystem and designed to work with Astro's content collections system. It provides a complete development environment for content creators who want to use Obsidian as their primary writing tool, with seamless integration that requires no link conversion or manual configuration.
-
-## Installation & Setup
-
-1. Clone or download your Astro theme of choice
-2. Clone or download Vault CMS repository
-3. Open the folder of the version you want (Default, Minimal, or Docs)
-4. Copy the contents into your Astro project's `src/content` folder
-5. Open Obsidian and select "Open folder as vault", choosing the folder with the `.obsidian` directory
-
-## Project Status
-
-This project is actively maintained and provides a complete solution for Obsidian-based content management with Astro publishing workflows. The suite is designed to work seamlessly with the above examples and [Astro Modular](https://github.com/davidvkimball/astro-modular) but can be integrated into any Astro project.
-
-<a href="https://github.com/davidvkimball/vault-cms" class="no-styling no-underline" target="_blank"><button class="btn btn-primary w-full">  
+<a href="https://github.com/w0rmi/BoidSimulationOpenGL" class="no-styling no-underline" target="_blank"><button class="btn btn-primary w-full">  
     View Project  
   </button></a>

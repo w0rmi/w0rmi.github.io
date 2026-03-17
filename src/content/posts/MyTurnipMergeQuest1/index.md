@@ -1,24 +1,20 @@
 ---
-title: My Turnip Merge Quest - Day Zero
+title: My Turnip Merge Quest: Day Zero
 date: 2026-02-27
 description: How to use this Obsidian vault as a content management system.
 tags:
+  - MyTurnipMergeQuest
+  - turnip
+  - mesa3d
+  - driver
+  - linux
   - tutorial
-  - setup
-  - configuration
-  - astro
-  - obsidian
 image: "[[attachments/vault-cms-cover.png]]"
-imageAlt: Astro and Obsidian logos stacked vertically with a "+" (plus) sign between them.
 imageOG: true
 hideCoverImage: true
 hideTOC: false
-targetKeyword: vault cms
+targetKeyword: mtmq dayZero
 draft: false
-aliases:
-  - astro-suite-vault-modular-guide
-  - astro-suite-obsidian-vault-guide-astro-modular
-  - obsidian-vault-guide
 ---
 ![Vault CMS logo](attachments/vault-cms-cover.png)
 

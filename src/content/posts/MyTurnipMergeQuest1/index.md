@@ -1,5 +1,5 @@
 ---
-title: My Turnip Merge Quest: Day Zero
+title: "My Turnip Merge Quest: Day Zero"
 date: 2026-02-27
 description: How to use this Obsidian vault as a content management system.
 tags:

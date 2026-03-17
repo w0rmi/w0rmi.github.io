@@ -9,7 +9,7 @@ tags:
   - driver
   - linux
   - tutorial
-image: "[[attachments/DayZeroQuest.jpg]]"
+image: "[[DayZeroQuest.jpg]]"
 imageOG: true
 hideCoverImage: true
 hideTOC: false

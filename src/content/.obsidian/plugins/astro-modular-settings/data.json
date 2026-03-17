@@ -15,7 +15,7 @@
     "site": "https://astro-modular.netlify.app",
     "title": "Astro Modular",
     "description": "A flexible blog theme designed for Obsidian users.",
-    "author": "David V. Kimball",
+    "author": "Santiago Fernando Gomez",
     "language": "en",
     "faviconThemeAdaptive": true,
     "defaultOgImageAlt": "Astro Modular logo."
@@ -49,22 +49,17 @@
         "url": "/projects/"
       },
       {
-        "title": "Docs",
+        "title": "Side Quests",
         "url": "/docs/"
       },
       {
         "title": "About",
-        "url": "/about/",
-        "children": [
-          {
-            "title": "Privacy Policy",
-            "url": "/privacy-policy/"
-          }
+        "url": "/about/"
         ]
       },
       {
         "title": "GitHub",
-        "url": "https://github.com/davidvkimball/astro-modular"
+        "url": "https://github.com/w0rmi"
       }
     ],
     "social": [

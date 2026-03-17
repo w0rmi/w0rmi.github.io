@@ -9,7 +9,7 @@ tags:
   - driver
   - linux
   - tutorial
-image: "[[attachments/DayZeroQuest.jpg]]"
+image: "[[https://images.unsplash.com/photo-1682685795463-0674c065f315?q=80&w=1452&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D]]"
 imageOG: true
 hideCoverImage: true
 hideTOC: false

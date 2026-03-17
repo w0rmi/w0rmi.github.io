@@ -9,7 +9,7 @@ tags:
   - driver
   - linux
   - tutorial
-image: "[[attachments/vault-cms-cover.png]]"
+image: "[[attachments/DayZeroQuest.jpg]]"
 imageOG: true
 hideCoverImage: true
 hideTOC: false

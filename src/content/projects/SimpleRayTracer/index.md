@@ -34,22 +34,28 @@ This is my implementation of a simple RayTracer. There is a lot of space for mor
 ## Preview of the Features
 
 - **Movable Camera**
+
 ![alt](https://user-images.githubusercontent.com/19228971/178526657-7a8f36e8-47e5-48ac-bb3c-70085567cc22.jpeg)
 
 - **MSAA**
+
 ![alt](https://user-images.githubusercontent.com/19228971/178537351-26489eae-07d8-486e-9ded-70e9663f69c3.jpeg)
 Left image without MSAA - Right image with MSAA(# of samples = 100)
 
 - **Diffuse Material**
+
 ![alt](https://user-images.githubusercontent.com/19228971/178542458-39290277-57ec-4633-9a4b-ef6368aa3cb2.jpeg)
 
 - **Dielectric Material**
+
 ![alt](https://user-images.githubusercontent.com/19228971/178546408-6565aeec-e131-47d8-9737-2ff8f055c6a0.jpeg)
 
 - **Metal Material**
+
 ![alt](https://user-images.githubusercontent.com/19228971/178548651-a94f43b9-ce79-440f-bdd3-763ce231b34e.jpeg)
 
 - **DoF**
+
 ![alt](https://user-images.githubusercontent.com/19228971/178552159-6fc79557-7134-4e47-aefb-be04c6b7c163.jpeg)
 VFO: 30, ApertureSize: 0.3
 

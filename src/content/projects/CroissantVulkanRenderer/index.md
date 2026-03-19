@@ -211,11 +211,11 @@ int main()
 
 ## Dependencies
 
-- ** cmake >= 3.9.1 **
-- ** gcc >= 9.4.0 **
-- ** vulkan-validationlayers-dev **
-- ** spirv-tools **
-- ** glslc **
+- **cmake >= 3.9.1**
+- **gcc >= 9.4.0**
+- **vulkan-validationlayers-dev**
+- **spirv-tools**
+- **glslc**
 
 ## Building on Linux
 

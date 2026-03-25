@@ -336,6 +336,11 @@ export const siteConfig: SiteConfig = {
         url: "https://github.com/w0rmi",
         icon: "github",
       },
+      {
+	title: "Linkedin",
+	url: "https://linkedin.com/in/sfgomez",
+	icon: "linkedin",
+      }
     ],
   },
 

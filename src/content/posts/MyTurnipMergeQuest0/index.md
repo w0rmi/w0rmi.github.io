@@ -1,7 +1,7 @@
 ---
 title: "My Turnip Merge Quest: Day Zero"
 date: 2026-02-27
-description: How to use this Obsidian vault as a content management system.
+description: Hey there, earthling! Welcome to my series of blogs/tutorials related to contrubuting to the Turnip driver from Mesa.
 tags:
   - MyTurnipMergeQuest
   - turnip

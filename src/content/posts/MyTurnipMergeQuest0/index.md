@@ -22,7 +22,7 @@ draft: false
 
 # Introduction
 
-*Hey there, earthling!*  Welcome to my series of blogs/tutorials(I hope to make many of them... at least enough to call it a series e.e). I plan to share the knowledge I'll be gathering along this long journey as I contribute to the open-source world, specifically to **Mesa-Turnip**.
+*Hey there, earthling!*  Welcome to my series of blogs/tutorials(I hope to make many of them... at least enough to call it a series e.e). I plan to share the knowledge I'll be gathering along this long journey as I contribute to the open-source world, specifically to **Mesa-Turnip** project.
 
 I'm very excited to start this path. I've wanted to get involved in this world for quite a while, but for some reason or another, I just didn't. But hey, here I am, better late than never! :).
 

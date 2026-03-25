@@ -24,7 +24,7 @@ This is my implementation of a simple RayTracer. There is a lot of space for mor
 ## Features
 
 - **Movable Camera.**
-- **MSAA(Multisampling Antialiasing).**
+- **MSAA (Multisampling Antialiasing).**
 - **Materials: Dielectric, Diffuse and Metal.**
 - **Surface: Sphere.**
 - **Depth of Field.**
@@ -40,7 +40,7 @@ This is my implementation of a simple RayTracer. There is a lot of space for mor
 - **MSAA**
 
 ![alt](https://user-images.githubusercontent.com/19228971/178537351-26489eae-07d8-486e-9ded-70e9663f69c3.jpeg)
-Left image without MSAA - Right image with MSAA(# of samples = 100)
+Left image without MSAA - Right image with MSAA (# of samples = 100)
 
 - **Diffuse Material**
 

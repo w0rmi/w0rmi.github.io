@@ -32,7 +32,7 @@ Hey there! This is my implementation of a boid flocking simulation in OpenGL.
 
 - **Linux**
 - **C++17**
-- **OpenGL(GLAD)**
+- **OpenGL (GLAD)**
 - **GLM**
 - **ImGUI**
 - **SDL2**

@@ -20,12 +20,12 @@ aliases:
 
 Hey there! This is basic maze generator and solver created in python3 using tkinter.
 
-## Maze-generator algorithms
+## Maze-Generator Algorithms
 
 - **Depth-first search.**
 - **Minimum spanning tree(Prim's Maze Generator).**
 
-## Maze-solver algorithm
+## Maze-Solver Algorithm
 
 - **Depth-first search.**
 

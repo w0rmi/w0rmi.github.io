@@ -25,7 +25,7 @@ aliases:
 
 
 
-<p align="center"> Real-time, Physically based renderer built with Vulkan and modern C++17.</p>
+<p align="center"> Real-time, Physically Based Renderer Built with Vulkan and Modern C++17.</p>
 
 ## About
 
@@ -45,7 +45,7 @@ s
 
 ## Features
 
-- **Physically based rendering(Cook–Torrance BRDF).**
+- **Physically based rendering (Cook–Torrance BRDF).**
 - **Image based lighting.**
 - **Forward rendering.**
 - **Multisample anti-aliasing (MSAA).**
@@ -248,16 +248,16 @@ After a successful build, the resulting executable can be found in the bin direc
 
 The following assets are bundled with the project:
 
-### - HDRs
+### HDRs
 
 - Winter Forest and Apartment from [ihdri](https://polyhaven.com/hdris).
 - Country Club, Farm Field, Neon Photostudio, Peppermint Powerplant 2 and Shangai Bund from [PolyHaven](https://polyhaven.com/) (distributed under [CC0](https://polyhaven.com/license)).
-- Arches PineTree from [HdrLabs](https://hdrlabs.com/)(distributed under [Creative Commons Attribution-Noncommercial-Share Alike 3.0 License](https://creativecommons.org/licenses/by-nc-sa/3.0/us/)).
+- Arches PineTree from [HdrLabs](https://hdrlabs.com/) (distributed under [Creative Commons Attribution-Noncommercial-Share Alike 3.0 License](https://creativecommons.org/licenses/by-nc-sa/3.0/us/)).
 
-### - Models
+### Models
 
 - Cube from [Cesium](https://cesium.com/) (distributed under [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/)).
-- Damaged Helmet from [theblueturtle_](https://sketchfab.com/theblueturtle_)(distributed under [Creative Commons Attribution-Noncommercial-Share Alike 3.0 License](https://creativecommons.org/licenses/by-nc-sa/3.0/us/)).
+- Damaged Helmet from [theblueturtle_](https://sketchfab.com/theblueturtle_) (distributed under [Creative Commons Attribution-Noncommercial-Share Alike 3.0 License](https://creativecommons.org/licenses/by-nc-sa/3.0/us/)).
 - Sponza from [alexandre-pestana](https://www.alexandre-pestana.com/).
 - Metal Rough Spheres from Analytical Graphics (distributed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)).
 - AK 47 Tactical Upgrade from [Mateusz Woliński](https://sketchfab.com/jeandiz) (distributed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)).

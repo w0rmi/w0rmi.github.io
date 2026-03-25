@@ -18,7 +18,7 @@ targetKeyword: mtmq dayZero
 draft: false
 ---
 
-[!alt](https://images.unsplash.com/photo-1682685795463-0674c065f315?q=80&w=1452&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+![alt](https://images.unsplash.com/photo-1682685795463-0674c065f315?q=80&w=1452&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
 # Introduction
 
@@ -39,7 +39,7 @@ Like you can see in the title, my goal is to make my first merge request into th
 
 # Where We Stand
 
-[!alt](https://cdn.pixabay.com/photo/2024/07/01/04/28/mountain-8864325_1280.jpg)
+![alt](https://cdn.pixabay.com/photo/2024/07/01/04/28/mountain-8864325_1280.jpg)
 
 Well, since the goal is related to **Turnip** and *Turnip=Android+Drivers+ComputerGraphics+Linux* I don't start completely from 0, since I'm a graphics programmer with some years of experience and I also have experience in Linux, but for the other part... the part of GPU drivers, I got really interested in the last year, so I have some reading of blogs and articles on my back, but 0 experience and **Android**..... -1. Why do I tell you this (which you probably don't care :v)? Well, I just want to be honest about where I'm starting from. My hope is that maybe you find yourself in a similar position as me, so maybe you will feel motivated if you are someone like me or are in a similar position trying to do the same. If I can achieve this starting from here, you can definetely do it too :).
 

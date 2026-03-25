@@ -327,13 +327,13 @@ export const siteConfig: SiteConfig = {
     // [CONFIG:NAVIGATION_SOCIAL]
     social: [
       {
-        title: "X",
-        url: "https://x.com/davidvkimball",
-        icon: "x-twitter",
+        title: "Mastodon",
+        url: "https://mastodon.social/@safergo",
+        icon: "mastodon",
       },
       {
         title: "GitHub",
-        url: "https://github.com/davidvkimball",
+        url: "https://github.com/w0rmi",
         icon: "github",
       },
     ],

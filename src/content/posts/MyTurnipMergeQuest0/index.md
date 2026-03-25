@@ -24,7 +24,7 @@ draft: false
 
 *Hey there, earthling!*  Welcome to my series of blogs/tutorials(I hope to make many of them... at least enough to call it a series e.e). I plan to share the knowledge I'll be gathering along this long journey as I contribute to the open-source world, specifically to **Mesa-Turnip** project.
 
-I'm very excited to start this path. I've wanted to get involved in this world for quite a while, but for some reason or another, I just didn't. But hey, here I am, better late than never! :).
+I'm very excited to start this path. I've wanted to get involved in this world for quite a while, but for some reason or another, I just didn't. But hey, here I am, better late than never! :)
 
 ![alt](https://images.unsplash.com/photo-1700838712765-fad192553296?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 

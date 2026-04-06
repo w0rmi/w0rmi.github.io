@@ -19,14 +19,14 @@ draft: false
 ---
 
 ![alt](https://images.unsplash.com/photo-1521929253990-8dccb82cc59b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
-
+*Photo from [Unsplash](https://images.unsplash.com/photo-1521929253990-8dccb82cc59b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)*
 
 Hey there, earthling! In this section I want to talk about how to choose an open-source project. Since there is a sea of options, it can be a little (or a lot) overwhelming. I'll share my own experience, which obviously will differ from yours, and how I ended up choosing Turnip. It may give you some heuristic from where to start and how to go about it. I'll try to keep some parts general, while others will be more specific to my personal path. Hope this helps you! :)
 
 ## Step 1: Zoom Out
 
 ![alt](https://images.pexels.com/photos/28934343/pexels-photo-28934343.jpeg)
-
+*Photo from [Unsplash](https://images.pexels.com/photos/28934343/pexels-photo-28934343.jpeg)*
 
 Spot something that you are interested in, BUT in an **abstract way**. I'm not asking you to pick something super specific like: *"I AM INTERESTED IN PROFILING THE PERFORMANCE OF RAY TRACING CALLS IN MOBILE GAMES"* -> No e.e! We'll have time for that later. Think more like: *"I am interested in computer graphics"*.
 
@@ -35,6 +35,7 @@ To help you narrow it down, you have 2 options; either you pick something you ha
 ## Step 2: Zoom In
 
 ![alt](https://images.unsplash.com/photo-1610023709594-b3a7b76331d2?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+*Photo from [Unsplash](https://images.unsplash.com/photo-1610023709594-b3a7b76331d2?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)*
 
 Now that you have an **abstact idea** of what you want, in order to know specifically which project to choose, we have to do a deeper research. Since we are talking about open-source projects only, I'll share what worked for me. You can do your own research in any way that you can think of, but if you need some help, this is where I started looking at:
 
@@ -47,36 +48,40 @@ By looking at it this way, you will probably find the latest state of OSS in tha
 #### X.Org Developer's Conference (XDC)
 
 ![alt](https://cdn.masto.host/floss/media_attachments/files/115/298/467/746/117/325/original/a3776f98a0d3b33a.jpg)
+*Photo from [Mastodon](https://cdn.masto.host/floss/media_attachments/files/115/298/467/746/117/325/original/a3776f98a0d3b33a.jpg)*
 
 I think it's probably the most important conference related to the Linux graphic stack, and the best part... it's free :D. If a new feature is coming to the DRM in the kernel or there is a major update in Mesa, it will proably be debated and presented here. I hope to participate sometime in the future. Sadly this year the event is not near where I live, so probably it will be next year instead...
 
-[[https://www.x.org/wiki/Events/]]
+[https://www.x.org/wiki/Events/](https://www.x.org/wiki/Events/)
 
 #### FOSDEM
 
 ![alt](https://assets.chaos.social/media_attachments/files/115/996/449/614/589/653/original/8f653920353496c7.jpg)
+*Photo from [Mastodon](https://assets.chaos.social/media_attachments/files/115/996/449/614/589/653/original/8f653920353496c7.jpg)*
 
 It is one of the world's largest open-source conferences, located in Europe. Obviously, graphics related staff is not the only thing presented here, but there is a dedicated Graphics Devroom. Very important for the Linux graphic stack ecosystem.
 
-[[https://fosdem.org/]]
+[https://fosdem.org/](https://fosdem.org/)
 
 #### Vulkanised
 
 ![alt](https://cdn.fosstodon.org/media_attachments/files/116/098/107/433/375/879/original/a97ccd92f2ac2f0b.jpg)
+*Photo from [Mastodon](https://cdn.fosstodon.org/media_attachments/files/116/098/107/433/375/879/original/a97ccd92f2ac2f0b.jpg)*
 
 Like you see from the title, this is a very specialized conference focused entirely on the Vulkan API. Hosted by the Khronos Group. Also, it's very relevant to the world of the Linux graphic stack.
 
-[[https://vulkan.org/events/vulkanised-2026]]
+[https://vulkan.org/events/vulkanised-2026](https://vulkan.org/events/vulkanised-2026)
 
 #### The Linux Foundation Open Source Summit
 
 ![alt](https://www.linuxfoundation.org/hs-fs/hubfs/Sched%20Mobile%20Header.png?width=911&height=380&name=Sched%20Mobile%20Header.png)
+*Photo from [LinuxFoundation](https://www.linuxfoundation.org/hs-fs/hubfs/Sched%20Mobile%20Header.png?width=911&height=380&name=Sched%20Mobile%20Header.png)*
 
 This one is more of an "industry event" organized by the Linux Foundation. It covers a lot of open-source topics, focusing more on the industry rather than just the developers. Here the "major stakeholders" align their business goals with the open-source development. It's relevant to the graphic stack on linux, but not a lot.
 
 I have never attended to this one (or any of the others :c yet!), but I think this one is a good place to see which open-source projects are gaining relevance in the industry and receiveng founding, which usually means more people working on them (probably).
 
-[[https://events.linuxfoundation.org/open-source-summit-europe/]]
+[https://events.linuxfoundation.org/open-source-summit-europe/](https://events.linuxfoundation.org/open-source-summit-europe/)
 
 ### Code Hosting Platforms
 
@@ -84,15 +89,16 @@ The title speaks for itself: choose any platform, type the area that you are int
 
 Examples:
 
-- [[https://gitlab.com/]]
-- [[codeberg.org]]
-- [[https://sourcehut.org/]]
-- [[https://github.com/]]
-- [[https://bitbucket.org/repo/all]]
+- [https://gitlab.com/](https://gitlab.com/)
+- [codeberg.org](codeberg.org)
+- [https://sourcehut.org/](https://sourcehut.org/)
+- [https://github.com/](https://github.com/)
+- [https://bitbucket.org/repo/all](https://bitbucket.org/repo/all)
 
 ## Step 3: Choose Your Pokemon!
 
 ![[chooseYour.jpg]]
+* :')
 
 I imagine that you now have a more specific idea of what interests you, now it's time to choose one OSS project! In my case, I became really interested in the current state of open-source graphics drivers on linux. There is a lot of people involved lately. To my surprise, the current state is more advanced that i thought. I remember trying gaming on Linux a few years ago and there was a lot of room for improvement, but now? WOW. The news that I've been reading are completely true, Linux for gaming right now is wonderful. I always kept 2 partitions on my pc, one with Linux for my projects/work, and the other with Windows only for gaming due to the lack of stability (and the anti-cheats :c). It's very exciting to see many people contributing and improving this. When I saw all of this, I knew for sure that I wanted to be part of it.
 
@@ -107,7 +113,7 @@ Like you can see in the table, a lot of options. I'll get very personal now, sin
 - Something that is not completely "done" and also not completely "new", since in any of those states, it would be hard for me since I'm starting, it has to be something in the middle.
 - Something that I already have the hardware to work with or it's cheap to buy.
 
-I starting looking at different communiies and subreddits to see how active each project was. Based on all these preferences, I narrowed it down to these options:
+I starting looking at different communities and subreddits to see how active each project was. Based on all these preferences, I narrowed it down to these options:
 
 FOTO 2
 

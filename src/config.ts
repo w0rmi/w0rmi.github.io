@@ -315,13 +315,10 @@ export const siteConfig: SiteConfig = {
     showMobileMenu: true,
     // [CONFIG:NAVIGATION_PAGES]
     pages: [
-      { title: "Blog", url: "/posts/" },
+      { title: "Blogs", url: "/posts/" },
       { title: "Projects", url: "/projects/" },
       { title: "Side Quests", url: "/docs/" },
-      { title: "About", url: "/about/",
-        children: [
-          { title: "Privacy Policy", url: "/privacy-policy/" }
-        ] },
+      { title: "About", url: "/about/" },
       { title: "GitHub", url: "https://github.com/w0rmi" }
     ],
     // [CONFIG:NAVIGATION_SOCIAL]

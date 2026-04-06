@@ -20,6 +20,7 @@ draft: false
 
 ![alt](https://images.unsplash.com/photo-1521929253990-8dccb82cc59b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
+
 Hey there, earthling! In this section I want to talk about how to choose an open-source project. Since there is a sea of options, it can be a little (or a lot) overwhelming. I'll share my own experience, which obviously will differ from yours, and how I ended up choosing Turnip. It may give you some heuristic from where to start and how to go about it. I'll try to keep some parts general, while others will be more specific to my personal path. Hope this helps you! :)
 
 # Step 1: Zoom Out
@@ -72,7 +73,7 @@ Examples:
 - https://github.com/
 - bitbucket.com
 
-# Step 3: Pick Your Pokemon
+# Step 3: Choose Your Pokemon!
 
 I imagine that now you have some more specific idea of what interests, now it's time to choose very specifically! In my case I got really interested in the actual state of the open-source graphics drivers on linux, there is a lot of people involved lately. For my surprise, it was a lot more advaced that I though, since I remember some years ago to try gaiming on linux at it had a loot of room for improvement, but now, WOW. The news that I've been reading are completely true, linux for gaming right now is wonderfull, I always had/have in pc 2 partitions one with linux for my projects/work and the other with windows only for gaming for the lack of stability. It's very exciting to see a lot of people apporting and improving this, when I saw all of this I definitely knew that I wanted to formar parte.
 

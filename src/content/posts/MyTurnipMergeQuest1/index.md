@@ -104,18 +104,27 @@ I imagine that you now have a more specific idea of what interests you, now it's
 
 Ok, I know that I want to contribute to open-source graphics drivers, but which one? There are a loooooooot of drivers. To decide which one to pick, I started comparing them. At the time, I made this table comparation (which I hope is not outdated at the time I publish this):
 
-FOTO
+| Hardware | Vulkan (Driver) | OpenGL (Driver) |
+| :--- | :--- | :--- |
+| **Nvidia** | NVK | Nouveau |
+| **AMD** | RADV | RadeonSI |
+| **Intel** | ANV | Iris |
+| **Qualcomm** | Turnip | Freedreno |
+| **ARM** | PanVK | Panfrost |
+| **Apple** | Asahi Honeykrisp | Asahi GL |
+| **RaspberryPi** | V3DV | V3D |
+| **CPU** | Lavapipe | llvmpipe |
 
-Like you can see in the table, a lot of options. I'll get very personal now, since this were my preferences to pick one or another:
+Special mention to **Zink** which is a "layered" driver that translates OpenGL command into Vulkan.
 
-- Something that is more related to modern graphics, so I would prefere Vulkan.
-- Something that people are involve and it's not something death, since I want to belong to some kind of developers community, in which I can get and give help.
-- Something that is not completely "done" and also not completely "new", since in any of those states, it would be hard for me since I'm starting, it has to be something in the middle.
-- Something that I already have the hardware to work with or it's cheap to buy.
+Probably there are a lot more, but these are the most interesting ones from my point of view at the time that I'm publishing this blog.
 
-I starting looking at different communities and subreddits to see how active each project was. Based on all these preferences, I narrowed it down to these options:
+As you can see in the table, there are a lot of options. I'll get very personal now, since these were my preferences for picking one or another:
 
-FOTO 2
+- Something that is more related to modern graphics, so I would prefer Vulkan.
+- Something that people are involved in and that isn't dead, since I want to belong to some kind of a developers community in which I can get and give help.
+- Something that is not completely "done" and also not completely "new". In either of those states, it would be hard for me since I'm starting. It has to be something in the middle.
+- Something that I already have the hardware to work with or that is cheap to buy.
 
 At the time I was deciding which one to pick, I remember joining the Android emulation subreddit. I was impressed by how many users where testing games on Android and how well they were running. Around that same time, Valve announced the Steam Frame, which would use an Adreno GPU (a mobile gpu). Seeing all of that, combined with my interest in mobile graphics I've had for some time now and the significant activity in the Mesa repo (related to mobile gpu drivers) made my decision much easier. At that moment, I knew that I would choose Turnip as my first open-source project :)
 

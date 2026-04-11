@@ -325,7 +325,7 @@ export const siteConfig: SiteConfig = {
     social: [
       {
         title: "Mastodon",
-        url: "https://mastodon.social/@safergo",
+        url: "https://hachyderm.io/@w0rmi",
         icon: "mastodon",
       },
       {

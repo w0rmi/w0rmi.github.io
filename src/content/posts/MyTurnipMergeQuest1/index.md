@@ -1,6 +1,6 @@
 ---
 title: "My Turnip Merge Quest: Finding the North Star"
-date: 2026-02-27
+date: 2025-11-21
 description: Hey there, earthling! 
 tags:
   - MyTurnipMergeQuest

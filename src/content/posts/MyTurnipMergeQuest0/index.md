@@ -1,5 +1,7 @@
 ---
 title: "My Turnip Merge Quest: Day Zero"
+category: "MyTurnipMergeQuest"
+order: 0
 date: 2025-11-18
 description: Hey there, earthling! Welcome to my series of blogs/tutorials related to contrubuting to the Turnip driver from Mesa.
 tags:

@@ -1,5 +1,7 @@
 ---
 title: "My Turnip Merge Quest: Troubleshooting Bible"
+category: "My Turnip Merge Quest"
+order: 99
 date: 2025-11-17
 description: Hey there, earthling! 
 tags:

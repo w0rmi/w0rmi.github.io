@@ -1535,8 +1535,8 @@ svg:has(text:contains("mermaid version")) {
 }
 
 .rlc-favicon {
-  width: 40px !important;
-  height: 40px !important;
+  width: 20px !important;
+  height: 20px !important;
   flex-shrink: 0 !important;
 }
 
@@ -1557,14 +1557,3 @@ svg:has(text:contains("mermaid version")) {
   -webkit-box-orient: vertical !important;
   overflow: hidden !important;
 }
-
-.rlc-info img:not(.rlc-favicon) {
-  order: 4 !important;
-  width: 100% !important;
-  height: 45px !important;
-  object-fit: cover !important;
-  border-radius: 2px !important;
-  margin-top: 1px !important;
-  opacity: 0.8 !important;
-}
-

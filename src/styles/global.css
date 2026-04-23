@@ -1500,3 +1500,14 @@ svg:has(text:contains("mermaid version")) {
   }
 }
 
+.rlc-container {
+  display: block !important;
+  margin: 0.5rem 0 !important;
+  padding: 0 !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 6px !important;
+  background-color: #0f172a !important;
+  text-decoration: none !important;
+  overflow: hidden !important;
+  max-height: 80px !important;
+}

@@ -1530,6 +1530,7 @@ svg:has(text:contains("mermaid version")) {
 
 .rlc-favicon {
   display: flex !important;
+  margin: 0.3rem !important;
 }
 
 .rlc-description {

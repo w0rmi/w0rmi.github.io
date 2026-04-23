@@ -1500,39 +1500,27 @@ svg:has(text:contains("mermaid version")) {
   }
 }
 
-/* Paste this once in your global.css */
-.remark-link-card__container {
-  display: block;
-  border: 1px solid #333;
-  border-radius: 8px;
-  padding: 1rem;
-  margin: 1rem 0;
-  background: #111; /* Dark background for the card */
+[class*="remark-link-card"] {
+  display: block !important;
+  border: 1px solid #444 !important;
+  border-radius: 8px !important;
+  padding: 15px !important;
+  margin: 20px 0 !important;
+  background-color: #1a1a1a !important;
   text-decoration: none !important;
 }
 
-.remark-link-card__link {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  color: white !important;
+[class*="remark-link-card__link"] {
+  display: flex !important;
+  align-items: center !important;
+  gap: 15px !important;
+  color: #fff !important;
 }
 
-.remark-link-card__image {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-  flex-shrink: 0;
+[class*="remark-link-card__image"] {
+  width: 60px !important;
+  height: 60px !important;
+  object-fit: contain !important;
+  flex-shrink: 0 !important;
 }
 
-.remark-link-card__title {
-  display: block;
-  font-weight: bold;
-  color: #3b82f6;
-}
-
-.remark-link-card__description {
-  display: block;
-  font-size: 0.85rem;
-  opacity: 0.8;
-}

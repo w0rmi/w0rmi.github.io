@@ -1509,5 +1509,13 @@ svg:has(text:contains("mermaid version")) {
   background-color: #0f172a !important;
   text-decoration: none !important;
   overflow: hidden !important;
-  max-height: 80px !important;
+  max-height: 90px !important;
+}
+
+.rlc-url-container {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 6px !important;
+  margin-top: 1px !important;
 }

@@ -1560,7 +1560,7 @@ svg:has(text:contains("mermaid version")) {
 .rlc-info img:not(.rlc-favicon) {
   order: 4 !important;
   width: 100% !important;
-  height: 50px !important;
+  height: 35px !important;
   object-fit: cover !important;
   border-radius: 2px !important;
   margin-top: 2px !important;

@@ -1505,11 +1505,11 @@ svg:has(text:contains("mermaid version")) {
   margin: 0.0rem 0 !important;
   padding: 0.3rem !important;
   border: 3px solid rgba(255, 255, 255, 0.1) !important;
-  border-radius: 6px !important;
+  border-radius: 15px !important;
   background-color: #0f172a !important;
   text-decoration: none !important;
   overflow: hidden !important;
-  max-height: 90px !important;
+  max-height: 100px !important;
 }
 
 .rlc-info {
@@ -1524,9 +1524,12 @@ svg:has(text:contains("mermaid version")) {
 .rlc-url-container {
   display: flex !important;
   flex-direction: row !important;
-  align-items: center !important;
   gap: 0.5em !important;
   margin-top: 0.5rem !important;
+}
+
+.rlc-favicon {
+  display: flex !important;
 }
 
 .rlc-description {

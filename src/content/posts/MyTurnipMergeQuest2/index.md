@@ -52,6 +52,9 @@ https://dri.freedesktop.org/~cbrill/dri-log/index.php
 
 ### Mailing List
 
+![alt](https://images.unsplash.com/photo-1578655083045-1974aed129e6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+*Image from [Leksandr Gamaniuk](https://unsplash.com/@oleksander_gamaniuk) - [Unsplash](https://unsplash.com/)*
+
 It's a subscription mailing list in which you can ask and answer questions. The discussions will be received weekly? by all the the developers subscribed. I think it's relevant to know the latest discussions and also to ask for help if needed.
 
 More info here:
@@ -67,6 +70,9 @@ https://lists.freedesktop.org/archives/mesa-dev/
 Very helpful to gather information, tutorials and resources that will help us along the way. These are the ones that I could find:
 
 ### Official Documentation and Code
+
+![alt](https://images.unsplash.com/photo-1587716283570-f71969a1f854?q=80&w=1465&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+*Image from [David Nitschke](https://unsplash.com/@david_nitschke_95) - [Unsplash](https://unsplash.com/)*
 
 Obviously the most important documentation is the official one. Sadly, it has some outdated information, but it is nevertheless still very relevant.
 
@@ -94,6 +100,9 @@ Like I already shared on this blog [[]], there are several conferences related t
 
 
 ## Choosing the Right Hardware
+
+![alt](https://images.unsplash.com/photo-1697465379722-98040bb9c509?q=80&w=1750&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+*Image from [nik radzi](https://unsplash.com/@nradzi) - [Unsplash](https://unsplash.com/)*
 
 Like I already described in the [[first blog]], Turnip is a driver used for Adreno devices. Adreno is present in several mobiles, tablets, and also laptops. So... which one to pick? I don't think there is just one answer, so it depends... In my case I use these heuristics:
 
@@ -146,11 +155,17 @@ Luckily, I could get a very cheap second hand one here in Germany.
 
 ## Leaving Everything Ready for Turnip
 
+![alt](https://images.unsplash.com/photo-1771366629891-9db2a25481f6?q=80&w=1744&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+*Image from [Calvin Wise](https://unsplash.com/@wiseboysca) - [Unsplash](https://unsplash.com/)
+
 You have two options for using Turnip on Android: either you use it internally through an emulator, or you use the driver in the whole OS. The latter option is better since debugging through an emulator would be painful.
 
 Changing the graphic driver in our Android OS is not so easy as in Linux, but neither it is too hard (for now...). I'll share what I did to leave my tablet ready for using Turnip.
 
 ### Rooting the Android Device
+
+![alt](https://images.unsplash.com/photo-1592921195496-6ff2e332c0f6?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+*Image from [Vanna Phon](https://unsplash.com/@phonvanna) - [Unsplash](https://unsplash.com/)
 
 Why do we need to root our device? Because we need to make the OS use a different graphic driver instead from the proprietary one that comes with the device, which means that we need to "modify" OS files or trick the system so that it uses other files, which I'll explain further!
 

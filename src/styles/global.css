@@ -1516,8 +1516,8 @@ svg:has(text:contains("mermaid version")) {
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
-  gap: 1px !important;
-  margin-top: 1px !important;
+  gap: 0.5em !important;
+  margin-top: 0.5rem !important;
 }
 
 .rlc-description {

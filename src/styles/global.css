@@ -1500,72 +1500,70 @@ svg:has(text:contains("mermaid version")) {
   }
 }
 
-/* --- Diseño Final Link Card: Título > Info > Imagen --- */
-
 .rlc-container {
   display: block !important;
-  margin: 1.5rem 0 !important;
-  padding: 1.5rem !important;
+  margin: 0.5rem 0 !important;
+  padding: 0.6rem 1rem !important;
   border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  border-radius: 12px !important;
+  border-radius: 6px !important;
   background-color: #0f172a !important;
   text-decoration: none !important;
 }
 
 .rlc-info {
   display: flex !important;
-  flex-direction: column !important; /* Apilamos todo verticalmente */
-  gap: 12px !important;
+  flex-direction: column !important;
+  gap: 2px !important;
 }
 
 .rlc-title {
   order: 1 !important;
   font-weight: bold !important;
-  font-size: 1.2rem !important;
+  font-size: 0.95rem !important;
   color: #3b82f6 !important;
-  margin-bottom: 5px !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
 }
 
 .rlc-url-container {
   order: 2 !important;
   display: flex !important;
   align-items: center !important;
-  gap: 10px !important;
+  gap: 6px !important;
+  margin-top: -2px !important;
 }
 
 .rlc-favicon {
-  width: 20px !important;
-  height: 20px !important;
-  object-fit: contain !important;
+  width: 13px !important;
+  height: 13px !important;
   flex-shrink: 0 !important;
 }
 
 .rlc-url {
-  font-size: 0.9rem !important;
-  opacity: 0.7 !important;
-  color: #94a3b8 !important;
+  font-size: 0.7rem !important;
+  opacity: 0.4 !important;
+  white-space: nowrap !important;
 }
 
 .rlc-description {
   order: 3 !important;
-  font-size: 0.9rem !important;
+  font-size: 0.8rem !important;
   color: #cbd5e1 !important;
-  line-height: 1.4 !important;
-  margin: 5px 0 !important;
+  line-height: 1.2 !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 1 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
 }
 
 .rlc-info img:not(.rlc-favicon) {
   order: 4 !important;
   width: 100% !important;
-  height: auto !important;
-  max-height: 300px !important;
+  height: 60px !important;
   object-fit: cover !important;
-  border-radius: 8px !important;
-  margin-top: 10px !important;
-  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  border-radius: 4px !important;
+  margin-top: 4px !important;
+  opacity: 0.8 !important;
 }
 
-.rlc-container img[src*="favicons"] {
-  width: 20px !important;
-  height: 20px !important;
-}

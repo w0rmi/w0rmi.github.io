@@ -123,7 +123,14 @@ So... based on this new heuristic, I would need to pick up something that is:
 
 These are the Adreno GPUs available and the years in which they have been released:
 
-/....
+| Architecture   | GPU Model           | Release      |
+| :------------- | :----------------   | :---         | 
+|   Adreno 600   | Adreno 640, 660     | 2020         | 
+|   Adreno 700   | Adreno 730, 740     | 2022         | 
+|   Adreno 700   | Adreno 750          | 2024         | 
+|   Adreno X1    | Adreno X1-85        | 2024         | 
+|   Adreno 800   | Adreno 830          | 2025         | 
+|   Adreno X2    | Adreno X2 Series    | 2026         | 
 
 Ok, something in the middle, let's see what people are using! If more people are using it, it is probably relevant and means more developers working on it.
 
@@ -165,7 +172,7 @@ Changing the graphic driver in our Android OS is not so easy as in Linux, but ne
 ### Rooting the Android Device
 
 ![alt](https://images.unsplash.com/photo-1592921195496-6ff2e332c0f6?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
-*Image from [Vanna Phon](https://unsplash.com/@phonvanna) - [Unsplash](https://unsplash.com/)
+*Image from [Vanna Phon](https://unsplash.com/@phonvanna) - [Unsplash](https://unsplash.com/)*
 
 Why do we need to root our device? Because we need to make the OS use a different graphic driver instead from the proprietary one that comes with the device, which means that we need to "modify" OS files or trick the system so that it uses other files, which I'll explain further!
 

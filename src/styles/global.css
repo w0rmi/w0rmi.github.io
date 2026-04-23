@@ -1502,8 +1502,8 @@ svg:has(text:contains("mermaid version")) {
 
 .rlc-container {
   display: block !important;
-  margin: 0.5rem 0 !important;
-  padding: 1.0rem !important;
+  margin: 0.0rem 0 !important;
+  padding: 0.3rem !important;
   border: 3px solid rgba(255, 255, 255, 0.1) !important;
   border-radius: 6px !important;
   background-color: #0f172a !important;
@@ -1516,7 +1516,7 @@ svg:has(text:contains("mermaid version")) {
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
-  gap: 6px !important;
+  gap: 1px !important;
   margin-top: 1px !important;
 }
 

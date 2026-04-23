@@ -1500,68 +1500,72 @@ svg:has(text:contains("mermaid version")) {
   }
 }
 
+/* --- Diseño Final Link Card: Título > Info > Imagen --- */
+
 .rlc-container {
   display: block !important;
   margin: 1.5rem 0 !important;
-  padding: 1rem !important;
-  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  padding: 1.5rem !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
   border-radius: 12px !important;
   background-color: #0f172a !important;
   text-decoration: none !important;
-  transition: all 0.2s ease !important;
-  overflow: hidden !important;
-}
-
-.rlc-container:hover {
-  border-color: #3b82f6 !important;
-  background-color: #1e293b !important;
-  transform: translateY(-2px) !important;
 }
 
 .rlc-info {
   display: flex !important;
-  flex-direction: column-reverse !important;
-  gap: 1rem !important;
-  padding: 1.5rem !important;
+  flex-direction: column !important; /* Apilamos todo verticalmente */
+  gap: 12px !important;
 }
 
 .rlc-title {
-  display: block !important;
+  order: 1 !important;
   font-weight: bold !important;
-  font-size: 1.25rem !important;
+  font-size: 1.2rem !important;
   color: #3b82f6 !important;
-  margin: 0 !important;
+  margin-bottom: 5px !important;
 }
 
 .rlc-url-container {
+  order: 2 !important;
   display: flex !important;
   align-items: center !important;
-  gap: 0.5rem !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
-  padding-top: 1rem !important;
-  margin-top: 0.5rem !important;
+  gap: 10px !important;
 }
 
 .rlc-favicon {
-  width: 16px !important;
-  height: 16px !important;
+  width: 20px !important;
+  height: 20px !important;
   object-fit: contain !important;
-  opacity: 0.8 !important;
+  flex-shrink: 0 !important;
 }
 
 .rlc-url {
-  font-size: 0.85rem !important;
-  opacity: 0.6 !important;
-  color: white !important;
-  word-break: break-all !important;
+  font-size: 0.9rem !important;
+  opacity: 0.7 !important;
+  color: #94a3b8 !important;
 }
 
-.rlc-info img {
-  display: block !important;
-  width: 100% !important; 
+.rlc-description {
+  order: 3 !important;
+  font-size: 0.9rem !important;
+  color: #cbd5e1 !important;
+  line-height: 1.4 !important;
+  margin: 5px 0 !important;
+}
+
+.rlc-info img:not(.rlc-favicon) {
+  order: 4 !important;
+  width: 100% !important;
   height: auto !important;
-  max-height: 250px !important;
+  max-height: 300px !important;
   object-fit: cover !important;
   border-radius: 8px !important;
-  margin-bottom: 0.5rem !important;
+  margin-top: 10px !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.rlc-container img[src*="favicons"] {
+  width: 20px !important;
+  height: 20px !important;
 }

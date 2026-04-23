@@ -1519,7 +1519,7 @@ svg:has(text:contains("mermaid version")) {
 .rlc-title {
   order: 1 !important;
   font-weight: bold !important;
-  font-size: 0.95rem !important;
+  font-size: 0.80rem !important;
   color: #3b82f6 !important;
   white-space: nowrap !important;
   overflow: hidden !important;
@@ -1530,25 +1530,25 @@ svg:has(text:contains("mermaid version")) {
   order: 2 !important;
   display: flex !important;
   align-items: center !important;
-  gap: 6px !important;
-  margin-top: -2px !important;
+  gap: 2px !important;
+  margin-top: -1px !important;
 }
 
 .rlc-favicon {
-  width: 13px !important;
-  height: 13px !important;
+  width: 20px !important;
+  height: 20px !important;
   flex-shrink: 0 !important;
 }
 
 .rlc-url {
-  font-size: 0.7rem !important;
+  font-size: 0.75rem !important;
   opacity: 0.4 !important;
   white-space: nowrap !important;
 }
 
 .rlc-description {
   order: 3 !important;
-  font-size: 0.8rem !important;
+  font-size: 0.85rem !important;
   color: #cbd5e1 !important;
   line-height: 1.2 !important;
   display: -webkit-box !important;
@@ -1560,10 +1560,10 @@ svg:has(text:contains("mermaid version")) {
 .rlc-info img:not(.rlc-favicon) {
   order: 4 !important;
   width: 100% !important;
-  height: 60px !important;
+  height: 50px !important;
   object-fit: cover !important;
-  border-radius: 4px !important;
-  margin-top: 4px !important;
+  border-radius: 2px !important;
+  margin-top: 2px !important;
   opacity: 0.8 !important;
 }
 

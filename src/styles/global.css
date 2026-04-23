@@ -1514,6 +1514,11 @@ svg:has(text:contains("mermaid version")) {
 
 .rlc-info {
   display: flex !important;
+  flex-direction: column !important;
+}
+
+.rlc-title {
+  display: flex !important;
 }
 
 .rlc-url-container {

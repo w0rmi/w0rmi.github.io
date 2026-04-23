@@ -36,7 +36,7 @@ These are the communications means that I found, but please if you know any othe
 
 I won't explain in detail what it is, nor how to set it up, there are a lot of better tutorials for that. But, basically it's a text only chat, where you need an IRC client to connect to any network. In my case, I use Halloy, which works great.
 
-[[halloy.png]]
+![[halloy.png]]
 *Halloy*
 
 

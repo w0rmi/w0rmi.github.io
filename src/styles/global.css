@@ -1499,3 +1499,40 @@ svg:has(text:contains("mermaid version")) {
     @apply my-6;
   }
 }
+
+/* Paste this once in your global.css */
+.remark-link-card__container {
+  display: block;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  background: #111; /* Dark background for the card */
+  text-decoration: none !important;
+}
+
+.remark-link-card__link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: white !important;
+}
+
+.remark-link-card__image {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.remark-link-card__title {
+  display: block;
+  font-weight: bold;
+  color: #3b82f6;
+}
+
+.remark-link-card__description {
+  display: block;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}

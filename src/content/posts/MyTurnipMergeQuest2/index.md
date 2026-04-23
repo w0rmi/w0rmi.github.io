@@ -26,7 +26,7 @@ Probably this blog will be long, so have patience with it e.e. My plan for this 
 
 ## Communication
 
-[[https://images.unsplash.com/photo-1568258805731-c117485e50c2?q=80&w=772&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D]]
+![alt](https://images.unsplash.com/photo-1568258805731-c117485e50c2?q=80&w=772&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 *Image from [Sandra Tan](https://unsplash.com/@sandratansh) - [Unsplash](https://unsplash.com/)*
 
 First things first, we need to connect with the people working on the project obviously! I think one important aspect of working on an OSS project is to get involved and participate, so that's what we'll try to do.

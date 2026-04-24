@@ -94,11 +94,11 @@ The title speaks for itself: choose any platform, type the area that you are int
 
 Examples:
 
-- [https://gitlab.com/ .](https://gitlab.com/)
-- [https://codeberg.org/ .](https://codeberg.org/)
-- [https://sourcehut.org/](https://sourcehut.org/)
-- [https://github.com/](https://github.com/)
-- [https://bitbucket.org/repo/all](https://bitbucket.org/repo/all)
+[https://gitlab.com/](https://gitlab.com/)
+[https://codeberg.org/](https://codeberg.org/)
+[https://sourcehut.org/](https://sourcehut.org/)
+[https://github.com/](https://github.com/)
+[https://bitbucket.org/repo/all](https://bitbucket.org/repo/all)
 
 ---
 

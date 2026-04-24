@@ -50,6 +50,8 @@ To find old chats, you can check this website:
 
 https://dri.freedesktop.org/~cbrill/dri-log/index.php
 
+---
+
 ### Mailing List
 
 ![alt](https://images.unsplash.com/photo-1578655083045-1974aed129e6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
@@ -65,6 +67,8 @@ To find old messages, you can check this website:
 
 https://lists.freedesktop.org/archives/mesa-dev/
 
+---
+
 ## Resources
 
 Very helpful to gather information, tutorials and resources that will help us along the way. These are the ones that I could find:
@@ -78,6 +82,8 @@ Obviously the most important documentation is the official one. Sadly, it has so
 
 https://docs.mesa3d.org/drivers/freedreno.html
 
+---
+
 ### Tutorials
 
 #### Danylo Piliaiev Tutorials
@@ -86,6 +92,8 @@ Extremely helpful and also they are made by one of the main developers of Turnip
 
 https://blogs.igalia.com/dpiliaiev/turnips-in-the-wild-part-1/
 
+---
+
 
 #### Lucas Francisco Fryzek Tutorials
 
@@ -93,11 +101,13 @@ Same, very helpful tutorials, in this case made and shared by Lucas, another imp
 
 https://fryzekconcepts.com/index.html
 
+---
 
 #### Conference Speeches
 
 Like I already shared on this blog [[]], there are several conferences related to the graphic stack. If you search X conference + Turnip or Vulkan, you will find a lot of speeches with a lot of helpful information. I'll not share them all here since there are a lot and depending on what specifically you are working on, you will need one or another, but I thought it was important to mention it.
 
+---
 
 ## Choosing the Right Hardware
 
@@ -138,7 +148,8 @@ Like I already mentioned in the other blog, the subreddits related to emulation 
 
 Ok, that series seems like "the middle", but the info that made me decide which one was the Steam Frame. That device was announced at the end of last year, saying that they will use... YES, an Adreno GPU, and that Adreno GPU is the 750 one. Done, decision made ;) .This means that it will become more relevant than it's now, and a lot more users will use it. Perfect!
 
-STEAM FRAME
+![alt](https://clan.fastly.steamstatic.com/images/45479024/41ac1feaa13a1396844a31be91beb068eb2e509f.jpg)
+*Image from [Valve Corporation](https://www.valvesoftware.com/en/)*
 
 > The Adreno 750 GPU is in different devices: mobiles, tablets and on development boards.
 
@@ -169,12 +180,16 @@ You have two options for using Turnip on Android: either you use it internally t
 
 Changing the graphic driver in our Android OS is not so easy as in Linux, but neither it is too hard (for now...). I'll share what I did to leave my tablet ready for using Turnip.
 
+---
+
 ### Rooting the Android Device
 
 ![alt](https://images.unsplash.com/photo-1592921195496-6ff2e332c0f6?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 *Image from [Vanna Phon](https://unsplash.com/@phonvanna) - [Unsplash](https://unsplash.com/)*
 
 Why do we need to root our device? Because we need to make the OS use a different graphic driver instead from the proprietary one that comes with the device, which means that we need to "modify" OS files or trick the system so that it uses other files, which I'll explain further!
+
+---
 
 #### Unlocking the Bootloader
 
@@ -193,6 +208,8 @@ Without going into details the general steps (which may differ in your case) wer
     fastboot flashing unlock // On your device, a message confirmation for unlocking the bootloader will pop up -> confirm it.
 
 Now that we have our device with the bootloader unlocked, we can root our device :D
+
+---
 
 #### Magisk
 
@@ -238,9 +255,13 @@ fastboot reboot
 
 FOTO PULGAR ARRIBA CON LA APP
 
+---
+
 ### Configuring Android
 
 Deactivate gaming? how. Max  refresh rae, setting battery max, etc.
+
+---
 
 ## Installing Turnip on your Android Device
 
@@ -249,11 +270,15 @@ We are almost there! For having Turnip running on our device, we need to 2 more 
 > [!note] Magisk Modules
 > Like we already know, Magisk allows us to give root access to apps and also to make systemless modifications. Those systemless modifications are done through modules. In this case, we'll pack our Turnip .so file into a Magisk module to make the OS use it instead of the proprietary one.
 
+---
+
 ### Building and Injecting Turnip
 
 Since we plan to contribute to the Turnip project, obviously we need to learn how to build it! I won't get into much details, since there are already tutorials explaining this, and I don't see the point of repeating something that is perfectly explained e.e, but I'll write an overview of what you need to do and also share the resources/tutorial that helped me.
 
 It's important to notice that I'm using Ubuntu for this, so the steps may differ from yours!
+
+---
 
 #### Prerequisites
 
@@ -270,6 +295,8 @@ Why a .so file? Because you are probably building the Turnip driver on a x86_64 
 
 https://developer.android.com/ndk/downloads
 
+---
+
 #### Steps
 
 Already having all the prerequisites, these are the steps for building it. If you need more details, please see the links attached below in [[Resources]].
@@ -282,6 +309,8 @@ Already having all the prerequisites, these are the steps for building it. If yo
 Voila! Now, straight out of the oven, we have our delicious Turnip driver (libvulkan_mesa.so) ready for use :)
 
 FOTO DE OVEN
+
+---
 
 #### Resources
 

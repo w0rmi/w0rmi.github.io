@@ -219,6 +219,7 @@ In my case, these were the steps that I followed to install Magisk:
 2. Extract the init_boot.img from the payload.bin inside the OTA, and then send it to your device.
 
 I used this tool to extract it from the payload.bin
+
 https://github.com/ssut/payload-dumper-go
 
 3. Install the Magisk APK from the official repo and select the init_boot.img that you already sent.

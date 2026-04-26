@@ -34,7 +34,7 @@ These are the communications means that I found, but please if you know any othe
 
 ### IRC
 
-I won't explain in detail what it is, nor how to set it up, there are a lot of better tutorials for that. But, basically it's a text only chat, where you need an IRC client to connect to any network. In my case, I use Halloy, which works great.
+I won't get into details since there are a lot of better tutorials for that. But, basically it's a text only chat, where you need an IRC client to connect to any network. In my case, I use Halloy, which works great.
 
 ![[halloy.png]]
 *Halloy*
@@ -49,8 +49,6 @@ The server and channels used by or relevant to the Turnip developers are:
 To find old chats, you can check this website:
 
 https://dri.freedesktop.org/~cbrill/dri-log/index.php
-
----
 
 ### Mailing List
 
@@ -71,7 +69,7 @@ https://lists.freedesktop.org/archives/mesa-dev/
 
 ## Resources
 
-Very helpful to gather information, tutorials and resources that will help us along the way. These are the ones that I could find:
+Here I share the resources that will help us along the way. These are the ones that I could find related to Turnip:
 
 ### Official Documentation and Code
 
@@ -82,8 +80,6 @@ Obviously the most important documentation is the official one. Sadly, it has so
 
 https://docs.mesa3d.org/drivers/freedreno.html
 
----
-
 ### Tutorials
 
 #### Danylo Piliaiev Tutorials
@@ -92,20 +88,15 @@ Extremely helpful and also they are made by one of the main developers of Turnip
 
 https://blogs.igalia.com/dpiliaiev/turnips-in-the-wild-part-1/
 
----
-
-
 #### Lucas Francisco Fryzek Tutorials
 
 Same, very helpful tutorials, in this case made and shared by Lucas, another important developer from Igalia. 
 
 https://fryzekconcepts.com/index.html
 
----
-
 #### Conference Speeches
 
-Like I already shared on this blog [[]], there are several conferences related to the graphic stack. If you search X conference + Turnip or Vulkan, you will find a lot of speeches with a lot of helpful information. I'll not share them all here since there are a lot and depending on what specifically you are working on, you will need one or another, but I thought it was important to mention it.
+Like I already shared on this blog [[]], there are several conferences related to the graphic stack. If you search X conference + Turnip or Vulkan, you will find a lot of speeches with a lot of helpful information. I'll not share them all here since there are a lot and depending on what part of Turnip you are specifically working on, you will need one or another, but I thought it was important to mention it.
 
 ---
 
@@ -119,17 +110,17 @@ Like I already described in the [[first blog]], Turnip is a driver used for Adre
 - The older the hardware, the more likely it has better support, and better support = less need for development = fewer developers.
 - Better support also means = less room for fixing, so the things to improve would be harder to catch (probably) and harder for newer developers like me (and maybe you?).
 
-Knowing that these heuristics have something of truth, we can make the next conclusion:
+Trusting that these heuristics have something of truth, we can make the next conclusion:
 
 > We need to pick a hardware that is not very old and is still relevant today.
 
-Ok, but ===what happens if it's new, like the X2 Adreno GPUs?=== At the time that I'm writing this, they came out like a week ago. They will probably have a lot of bugs and a lot of room for improvement. But for a new developer, would this be ok? I dont think so. If you can't properly set up a basic setup or have a more or less stable ground to test things, it would be really hard probably for a new developer.
+Ok, but ==what happens if it's new, like the X2 Adreno GPUs?== At the time that I'm writing this, they came out like a week ago. They will probably have a lot of bugs and a lot of room for improvement. But for a new graphics driver developer, would this be ok? I don't think so. If you can't properly set up a basic setup or have a more or less stable ground to test things, it would be really hard probably for a new developer.
 
-So... based on this new heuristic, I would need to pick up something that is:
+So... based on that, I would need to pick up something that is:
 
-> Neither old nor fresh out of the oven e.e
+> Neither old nor fresh out of the oven e.e.
 
-> Like all things in life...something in the middle. But which one?
+> Like all things in life...**something in the middle**. But which one?
 
 These are the Adreno GPUs available and the years in which they have been released:
 
@@ -144,18 +135,24 @@ These are the Adreno GPUs available and the years in which they have been releas
 
 Ok, something in the middle, let's see what people are using! If more people are using it, it is probably relevant and means more developers working on it.
 
-Like I already mentioned in the other blog, the subreddits related to emulation are full of people trying very cool stuff on mobiles. So I started exploring what were the most used devices and came to the conclusion that the Snapdragon 8 Gen 3 GPUs were very used lately.
+Like I already mentioned in the other blog[[]], the subreddits related to emulation are full of people trying very cool stuff on mobiles. So I started exploring what were the most used devices and came to the conclusion that the Snapdragon 8 Gen 3 GPUs were very used lately.
 
-Ok, that series seems like "the middle", but the info that made me decide which one was the Steam Frame. That device was announced at the end of last year, saying that they will use... YES, an Adreno GPU, and that Adreno GPU is the 750 one. Done, decision made ;) .This means that it will become more relevant than it's now, and a lot more users will use it. Perfect!
+Ok, that series seems like "the middle", but the info that made me decide which one to pick was the Steam Frame. That device was announced at the end of last year, saying that they will use... YES, an Adreno GPU, and that Adreno GPU is the 750 one.
 
 ![alt](https://clan.fastly.steamstatic.com/images/45479024/41ac1feaa13a1396844a31be91beb068eb2e509f.jpg)
 *Image from [Valve Corporation](https://www.valvesoftware.com/en/)*
+
+- [X] Relevance. // Super check.
+- [X] Neither out of the over nor old. // Check.
+
+Done, decision made ;)
 
 > The Adreno 750 GPU is in different devices: mobiles, tablets and on development boards.
 
 Depending on your budget and preferences, you will choose one or another. In my case, I wanted something cheap and also that would be easy to debug.
 
 . In the case of the development board, it is the most confortable one to develop but very expensive, so I discarded it.
+
 . Mobile vs tablet: well, I would like something that is easier to see glitches and errors, so this measn bigger screen = tablet. 
 
 Since I already had the GPU model and the type of device, the brand didn't matter in my case, so I searched for the cheapest option. In this case ***I chose the OnePlus Pad 2**.
@@ -171,6 +168,8 @@ Luckily, I could get a very cheap second hand one here in Germany.
 > [!important]
 > Important to mention! Search for a device that is easy to root. This means that the manufacturer provides documentation on how to unlock the bootloader. In the case of the OnePlus, it is a perfect choise."
 
+---
+
 ## Leaving Everything Ready for Turnip
 
 ![alt](https://images.unsplash.com/photo-1771366629891-9db2a25481f6?q=80&w=1744&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
@@ -180,16 +179,12 @@ You have two options for using Turnip on Android: either you use it internally t
 
 Changing the graphic driver in our Android OS is not so easy as in Linux, but neither it is too hard (for now...). I'll share what I did to leave my tablet ready for using Turnip.
 
----
-
 ### Rooting the Android Device
 
 ![alt](https://images.unsplash.com/photo-1592921195496-6ff2e332c0f6?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 *Image from [Vanna Phon](https://unsplash.com/@phonvanna) - [Unsplash](https://unsplash.com/)*
 
 Why do we need to root our device? Because we need to make the OS use a different graphic driver instead from the proprietary one that comes with the device, which means that we need to "modify" OS files or trick the system so that it uses other files, which I'll explain further!
-
----
 
 #### Unlocking the Bootloader
 
@@ -208,8 +203,6 @@ Without going into details the general steps (which may differ in your case) wer
     fastboot flashing unlock // On your device, a message confirmation for unlocking the bootloader will pop up -> confirm it.
 
 Now that we have our device with the bootloader unlocked, we can root our device :D
-
----
 
 #### Magisk
 
@@ -255,8 +248,6 @@ fastboot reboot
 
 FOTO PULGAR ARRIBA CON LA APP
 
----
-
 ### Configuring Android
 
 Deactivate gaming? how. Max  refresh rae, setting battery max, etc.
@@ -270,15 +261,11 @@ We are almost there! For having Turnip running on our device, we need to 2 more 
 > [!note] Magisk Modules
 > Like we already know, Magisk allows us to give root access to apps and also to make systemless modifications. Those systemless modifications are done through modules. In this case, we'll pack our Turnip .so file into a Magisk module to make the OS use it instead of the proprietary one.
 
----
-
 ### Building and Injecting Turnip
 
 Since we plan to contribute to the Turnip project, obviously we need to learn how to build it! I won't get into much details, since there are already tutorials explaining this, and I don't see the point of repeating something that is perfectly explained e.e, but I'll write an overview of what you need to do and also share the resources/tutorial that helped me.
 
 It's important to notice that I'm using Ubuntu for this, so the steps may differ from yours!
-
----
 
 #### Prerequisites
 
@@ -308,9 +295,8 @@ Already having all the prerequisites, these are the steps for building it. If yo
 
 Voila! Now, straight out of the oven, we have our delicious Turnip driver (libvulkan_mesa.so) ready for use :)
 
-FOTO DE OVEN
-
----
+![alt](https://images.unsplash.com/photo-1693307090398-2a6d5cc39c77?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+*Image from [Anna Ansone](https://unsplash.com/@simplyanna) - [Unsplash](https://unsplash.com/)*
 
 #### Resources
 

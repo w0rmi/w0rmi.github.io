@@ -19,7 +19,9 @@ targetKeyword: mtmq dayZero
 draft: false
 ---
 
-## Introduction
+<center>
+
+# Day Zero
 
 ![alt](https://images.unsplash.com/photo-1682685795463-0674c065f315?q=80&w=1452&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 *Image from [NEOM](https://unsplash.com/@neom) - [Unsplash](https://unsplash.com/)*
@@ -27,6 +29,8 @@ draft: false
 **Hey there, earthling!**  Welcome to my series of posts/tutorials (I hope to make many of them... at least enough to call it a series e.e). I plan to share the knowledge I'll be gathering along this journey as I make my first contribution to the open-source world, specifically to the **Mesa-Turnip** project.
 
 I'm very excited to start this path. I've wanted to get involved in this world for quite a while, but for some reason or another, I just didn't. But hey, here I am, better late than never! :)
+
+</center>
 
 ---
 
@@ -48,9 +52,9 @@ My hope for this series is just to share my own path, showing how I started, whe
 
 As you can see in the title, my goal is to make my first merge request into the **Turnip** driver project from **Mesa**. Obviously, I want to make a relevant one, like a bug fix or some tool that can help others, not just a typo fix (without discrediting those fixes!). I know this is an ambitious goal for someone who has never contributed to any OSS project and also doesn't have any driver experience...., but I'm very excited to get into it. Every journey has to begin somewhere :)
 
-### What Is Turnip?
 
-Turnip, in short, is an open source Vulkan Linux driver for the Qualcomm Adreno GPUs. It is used mostly by Android users through emulators :), since those GPUs are presented mostly on mobile/tablet devices. Also, it's present on VR headsets, now also on the new Snapdragon laptops, and in other less relevant devices. It's also part of the Mesa project, the most important library for graphics on Linux 100% OSS! Freedreno it's his father(?) since a lot of the code is based on it. Freedreno includes the OpenGL driver.
+> [!note] What Is Turnip?
+> Turnip, in short, is an open source Vulkan Linux driver for the Qualcomm Adreno GPUs. It is used mostly by Android users through emulators :), since those GPUs are presented mostly on mobile/tablet devices. Also, it's present on VR headsets, now also on the new Snapdragon laptops, and in other less relevant devices. It's also part of the Mesa project, the most important library for graphics on Linux 100% OSS! Freedreno it's his father(?) since a lot of the code is based on it. Freedreno includes the OpenGL driver.
 
 I'll get into a lot of different details, such as why I chose it as my first OSS contribution, in my future posts.
 

@@ -187,9 +187,9 @@ export const siteConfig: SiteConfig = {
   // [CONFIG:SITE_TITLE]
   title: "w0rmi",
   // [CONFIG:HOMEPAGE_TITLE]
-  homepageTitle: "w0rmii",
+  homepageTitle: "w0rmi's Website",
   // [CONFIG:SITE_DESCRIPTION]
-  description: "My cave.",
+  description: "My little cave on the internet",
   // [CONFIG:SITE_AUTHOR]
   author: "Santiago Fernando Gomez",
   // [CONFIG:SITE_LANGUAGE]
@@ -197,7 +197,7 @@ export const siteConfig: SiteConfig = {
   // [CONFIG:FAVICON_THEME_ADAPTIVE]
   faviconThemeAdaptive: true, // If true, favicon switches between favicon-dark.png and favicon-light.png based on browser's system theme preference. If false, always uses favicon.png
   // [CONFIG:DEFAULT_OG_IMAGE_ALT]
-  defaultOgImageAlt: "Astro Modular logo.", // Alt text for the default Open Graph image, public/open-graph.png
+  defaultOgImageAlt: "w0rmi's logo.", // Alt text for the default Open Graph image, public/open-graph.png
 
   // Global Settings
   // [CONFIG:THEME]

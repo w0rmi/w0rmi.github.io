@@ -1,4 +1,4 @@
-# Astro Modular
+# My Website
 
 My little cave on the internet.
 

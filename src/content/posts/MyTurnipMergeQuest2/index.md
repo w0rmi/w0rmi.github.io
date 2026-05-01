@@ -39,12 +39,12 @@ Probably this post will be long, so have patience with it e.e. My plan for this 
 ![alt](https://images.unsplash.com/photo-1568258805731-c117485e50c2?q=80&w=772&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 *Image from [Sandra Tan](https://unsplash.com/@sandratansh) - [Unsplash](https://unsplash.com/)*
 
-First things first, we need to connect with the people working on the project obviously! I think one important aspect of working on an OSS project is to get involved and participate, so that's what we'll try to do.
+First things first, **we need to connect with the people working on the project** obviously! I think one important aspect of working on an OSS project is to get involved and participate, so that's what we'll try to do.
 These are the communications means that I found, but please if you know any other, share it with me and I'll update the list.
 
 ### IRC
 
-I won't get into details since there are a lot of better tutorials for that. But, basically it's a text only chat, where you need an IRC client to connect to any network. In my case, I use Halloy, which works great.
+I won't get into details since there are a lot of better tutorials for that. But, basically it's a **text only chat**, where you need an IRC client to connect to any network. In my case, I use [Halloy](https://halloy.chat/), which works great.
 
 ![[halloy.png]]
 *Halloy*
@@ -65,7 +65,7 @@ https://dri.freedesktop.org/~cbrill/dri-log/index.php
 ![alt](https://images.unsplash.com/photo-1578655083045-1974aed129e6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 *Image from [Leksandr Gamaniuk](https://unsplash.com/@oleksander_gamaniuk) - [Unsplash](https://unsplash.com/)*
 
-It's a subscription mailing list in which you can ask and answer questions. The discussions will be received weekly? by all the the developers subscribed. I think it's relevant to know the latest discussions and also to ask for help if needed.
+It's a **subscription mailing list** in which you can ask and answer questions. The discussions will be received weekly? by all the the developers subscribed. I think it's relevant to know the latest discussions and also to ask for help if needed.
 
 More info here:
 
@@ -77,7 +77,7 @@ https://lists.freedesktop.org/archives/mesa-dev/
 
 ---
 
-## Resources
+## Learning Resources
 
 Here I share the resources that will help us along the way. These are the ones that I could find related to Turnip:
 
@@ -100,13 +100,13 @@ https://blogs.igalia.com/dpiliaiev/turnips-in-the-wild-part-1/
 
 #### Lucas Francisco Fryzek Tutorials
 
-Same, very helpful tutorials, in this case made and shared by Lucas, another important developer from Igalia. 
+Same, very helpful tutorials, in this case made and shared by Lucas, another important developer from [Igalia](https://www.igalia.com/). 
 
 https://fryzekconcepts.com/index.html
 
-#### Conference Speeches
+### Conference Speeches
 
-Like I already shared on this blog [[]], there are several conferences related to the graphic stack. If you search X conference + Turnip or Vulkan, you will find a lot of speeches with a lot of helpful information. I'll not share them all here since there are a lot and depending on what part of Turnip you are specifically working on, you will need one or another, but I thought it was important to mention it.
+Like I already shared on this [post](/posts/myturnipmergequest1#oss-conferences), there are several conferences related to the graphic stack. If you search for X conference + Turnip or Vulkan, you will find a lot of speeches with a lot of helpful information. I'll not share them all here since there are a lot and depending on what part of Turnip you are specifically working on, you will need one or another, but I thought it was important to mention it.
 
 ---
 
@@ -115,22 +115,22 @@ Like I already shared on this blog [[]], there are several conferences related t
 ![alt](https://images.unsplash.com/photo-1697465379722-98040bb9c509?q=80&w=1750&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 *Image from [nik radzi](https://unsplash.com/@nradzi) - [Unsplash](https://unsplash.com/)*
 
-Like I already described in the [[first blog]], Turnip is a driver used for Adreno devices. Adreno is present in several mobiles, tablets, and also laptops. So... which one to pick? I don't think there is just one answer, so it depends... In my case I use these heuristics:
+Like I already described in the [first post](posts/myturnipmergequest0#goal), Turnip is a driver used for Adreno devices. Adreno is present in several mobiles, tablets, and also laptops. So... which one to pick? I don't think there is just one answer, so it depends... In my case I use these heuristics:
 
 - The older the hardware, the more likely it has better support, and better support = less need for development = fewer developers.
 - Better support also means = less room for fixing, so the things to improve would be harder to catch (probably) and harder for newer developers like me (and maybe you?).
 
 Trusting that these heuristics have something of truth, we can make the next conclusion:
 
-> We need to pick a hardware that is not very old and is still relevant today.
+==We need to pick a hardware that is not very old and is still relevant today.==
 
-Ok, but ==what happens if it's new, like the X2 Adreno GPUs?== At the time that I'm writing this, they came out like a week ago. They will probably have a lot of bugs and a lot of room for improvement. But for a new graphics driver developer, would this be ok? I don't think so. If you can't properly set up a basic setup or have a more or less stable ground to test things, it would be really hard probably for a new developer.
+Ok, but *what happens if it's new, like the X2 Adreno GPUs?* At the time that I'm writing this, they came out like a week ago. They will probably have a lot of bugs and a lot of room for improvement. But for a new graphics driver developer, would this be ok? I don't think so. If you can't properly set up a basic setup or have a more or less stable ground to test things, it would be really hard probably for a new developer.
 
 So... based on that, I would need to pick up something that is:
 
-> Neither old nor fresh out of the oven e.e.
+==Neither old nor fresh out of the oven e.e==
 
-> Like all things in life...**something in the middle**. But which one?
+Like all things in life...**something in the middle**. But which one?
 
 These are the Adreno GPUs available and the years in which they have been released:
 
@@ -145,7 +145,7 @@ These are the Adreno GPUs available and the years in which they have been releas
 
 Ok, something in the middle, let's see what people are using! If more people are using it, it is probably relevant and means more developers working on it.
 
-Like I already mentioned in the other blog[[]], the subreddits related to emulation are full of people trying very cool stuff on mobiles. So I started exploring what were the most used devices and came to the conclusion that the Snapdragon 8 Gen 3 GPUs were very used lately.
+Like I already mentioned in the other [post](posts/myturnipmergequest1#how-i-ended-up-choosing-turnip), the subreddits related to emulation are full of people trying very cool stuff on mobiles/tablets. So I started exploring what were the most used devices and came to the conclusion that the Snapdragon 8 Gen 3 GPUs were very used lately.
 
 Ok, that series seems like "the middle", but the info that made me decide which one to pick was the Steam Frame. That device was announced at the end of last year, saying that they will use... YES, an Adreno GPU, and that Adreno GPU is the 750 one.
 
@@ -153,19 +153,24 @@ Ok, that series seems like "the middle", but the info that made me decide which 
 *Image from [Valve Corporation](https://www.valvesoftware.com/en/)*
 
 - [X] Relevance. // Super check.
-- [X] Neither out of the over nor old. // Check.
+- [X] Neither old nor out of the oven. // Check.
 
 Done, decision made ;)
 
+> [!info]
 > The Adreno 750 GPU is in different devices: mobiles, tablets and on development boards.
 
-Depending on your budget and preferences, you will choose one or another. In my case, I wanted something cheap and also that would be easy to debug.
+Depending on your budget and preferences, you will choose one or another. In my case, **I wanted something cheap and also that would be easy to debug.**
 
 . In the case of the development board, it is the most confortable one to develop but very expensive, so I discarded it.
 
 . Mobile vs tablet: well, I would like something that is easier to see glitches and errors, so this measn bigger screen = tablet. 
 
-Since I already had the GPU model and the type of device, the brand didn't matter in my case, so I searched for the cheapest option. In this case ***I chose the OnePlus Pad 2**.
+Since I already had the GPU model and the type of device, the brand didn't matter in my case, so I searched for the cheapest option. In this case **I chose the OnePlus Pad 2**.
+
+> [!caution]
+> Search for a device that is easy to root. This means that the manufacturer provides documentation on how to unlock the bootloader. In the case of the OnePlus, it was a perfect choise.
+
 
 ![[onePlusPad2.jpg]]
 *Image from [w0rmi](https://w0rmi.github.io/about/)*
@@ -173,19 +178,16 @@ Since I already had the GPU model and the type of device, the brand didn't matte
 Luckily, I could get a very cheap second hand one here in Germany.
 
 > [!important]
-> Important to mention! Since I chose a GPU that is used on Android devices, some explanations will be specific to Android (at least at the beginning of the series). In the future, I plan to develop on the Adreno X1 GPUs, but only after I finish this quest. Since debugging on those laptops is easier than on Android, but with the current prices, I'll wait e.e.
-
-> [!important]
-> Important to mention! Search for a device that is easy to root. This means that the manufacturer provides documentation on how to unlock the bootloader. In the case of the OnePlus, it is a perfect choise."
+>Since I chose a GPU that is used on Android devices, some explanations will be specific to Android (at least at the beginning of the series). In the future, I plan to develop on the Adreno X1 GPUs, but only after I finish this quest. Since debugging on those laptops is easier than on Android, but with the current prices, I'll wait e.e.
 
 ---
 
-## Leaving Everything Ready for Turnip
+## Preparing the Android Device for Turnip
 
 ![alt](https://images.unsplash.com/photo-1771366629891-9db2a25481f6?q=80&w=1744&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
-*Image from [Calvin Wise](https://unsplash.com/@wiseboysca) - [Unsplash](https://unsplash.com/)
+*Image from [Calvin Wise](https://unsplash.com/@wiseboysca) - [Unsplash](https://unsplash.com/)*
 
-You have two options for using Turnip on Android: either you use it internally through an emulator, or you use the driver in the whole OS. The latter option is better since debugging through an emulator would be painful.
+You have two options for using Turnip on Android: **either you use it internally through an emulator, or you use the driver in the whole OS**. The latter option is better since debugging through an emulator would be painful.
 
 Changing the graphic driver in our Android OS is not so easy as in Linux, but neither it is too hard (for now...). I'll share what I did to leave my tablet ready for using Turnip.
 
@@ -194,22 +196,22 @@ Changing the graphic driver in our Android OS is not so easy as in Linux, but ne
 ![alt](https://images.unsplash.com/photo-1592921195496-6ff2e332c0f6?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 *Image from [Vanna Phon](https://unsplash.com/@phonvanna) - [Unsplash](https://unsplash.com/)*
 
-Why do we need to root our device? Because we need to make the OS use a different graphic driver instead from the proprietary one that comes with the device, which means that we need to "modify" OS files or trick the system so that it uses other files, which I'll explain further!
+==Why do we need to root our device?== Because we need to make the OS use a different graphic driver instead from the proprietary one that comes with the device, which means that we need to "modify" OS files or trick the system so that it uses other files, which I'll explain further!
 
 #### Unlocking the Bootloader
 
-Before rooting our device, we need to unlock the bootloader. I won't explain how, since depending on your device the method will differ, and also doing this is not available on all Android devices. It depends on the manufacturer. They need to allow OEM unlocking. In my case, OnePlus is very friendly to bootloader unlocking, so I didn't have any problem.
+Before rooting our device, we need to unlock the bootloader. I won't explain how, since depending on your device the method will differ, and also doing this is not possible on all Android devices. It depends on the manufacturer. They need to allow OEM unlocking. In my case, OnePlus is very friendly to bootloader unlocking, so I didn't have any problem.
 
 > [!caution]
 > Please, you need to know that unlocking the bootloader will trigger a factory reset (it will wipe all data) and may disable high security apps like banking apps, so do it at your own risk. My recommendation is to not use your daily device for this kind of development.
 
 Without going into details the general steps (which may differ in your case) were these in my case:
 
-- Unlock the Developer Options in your device (if you haven't already).
-- In Developer Options on your Android: Enable OEM Unlocking (it's like telling your device "I authorize the bootloader to be unlocked") and USB Debugging (to send commands to the device from your PC).
-- Connect your device using a USB to your PC, and in a terminal:
+1. Unlock the Developer Options in your device (if you haven't already).
+2. In Developer Options on your Android: Enable OEM Unlocking (it's like telling your device "I authorize the bootloader to be unlocked") and USB Debugging (to send commands to the device from your PC).
+3. Connect your device using a USB to your PC, and in a terminal:
     adb reboot bootloader (to enter into the Bootloader Mode).
-- Once in Bootloader Mode, in your terminal type:
+4. Once in Bootloader Mode, in your terminal type:
     fastboot flashing unlock // On your device, a message confirmation for unlocking the bootloader will pop up -> confirm it.
 
 Now that we have our device with the bootloader unlocked, we can root our device :D
@@ -227,8 +229,8 @@ In my case, these were the steps that I followed to install Magisk:
 
 1. Search for and download the OTA file specific to your device, version, and region.
 
-- To find the version: Settings -> About Device -> Version -> Here you will find the build number.
-- To find the region: At the end of the build number, you will see one of of these -> EU/GLO/NA/IN.
+    - To find the version: Settings -> About Device -> Version -> Here you will find the build number.
+    - To find the region: At the end of the build number, you will see one of of these -> EU/GLO/NA/IN.
 
 > [!note] OTA
 > It's just the official software update for your device. Depending on the manufaturer, you will have to find it on their website. Inside, it contains all the files needed for updating your device. This includes init_boost.img (the one we need), boot.img (contains the Linux kernel), system.img (the actual Android OS), etc. 
@@ -238,21 +240,21 @@ In my case, these were the steps that I followed to install Magisk:
 
 2. Extract the init_boot.img from the payload.bin inside the OTA, and then send it to your device.
 
-I used this tool to extract it from the payload.bin
+    - I used this tool to extract it from the payload.bin:
 
 https://github.com/ssut/payload-dumper-go
 
-3. Install the Magisk APK from the official repo and select the init_boot.img that you already sent.
+3. Install the Magisk APK from the [official repo](https://github.com/topjohnwu/Magisk) and select the init_boot.img that you already sent.
 
-In this step, Magisk will add the "root access code" to the init_boot.img and it will repack it into a new file called "magisk_patched.img"
+    - In this step, Magisk will add the "root access code" to the init_boot.img and it will repack it into a new file called "magisk_patched.img"
 
 4. Move the file generated by Magisk to your PC and flash your device with it.
 
-```bash
-adb reboot bootloader // to get into the Bootloader Mode
-fastboot flash init_boot magisk_patched.img
-fastboot reboot
-```
+    ```bash
+    adb reboot bootloader // to get into the Bootloader Mode
+    fastboot flash init_boot magisk_patched.img
+    fastboot reboot
+    ```
 
 5. Done :D, check that in the magisk app it says Installed.
 

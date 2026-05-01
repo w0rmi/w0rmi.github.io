@@ -363,7 +363,7 @@ export const siteConfig: SiteConfig = {
       // [CONFIG:HOME_OPTIONS_RECENT_POSTS_ENABLED]
       enabled: true, // Show recent posts on homepage
       // [CONFIG:HOME_OPTIONS_RECENT_POSTS_COUNT]
-      count: 7, // Number of recent posts to show
+      count: 2, // Number of recent posts to show
     },
     projects: {
       // [CONFIG:HOME_OPTIONS_PROJECTS_ENABLED]

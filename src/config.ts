@@ -315,7 +315,7 @@ export const siteConfig: SiteConfig = {
     showMobileMenu: true,
     // [CONFIG:NAVIGATION_PAGES]
     pages: [
-      { title: "Blogs", url: "/posts/" },
+      { title: "Blog", url: "/posts/" },
       { title: "Projects", url: "/projects/" },
       { title: "Side Quests", url: "/docs/" },
       { title: "About", url: "/about/" },

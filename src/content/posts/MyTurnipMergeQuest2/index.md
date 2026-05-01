@@ -1,8 +1,7 @@
 ---
-title: "My Turnip Merge Quest: Leaving the Shire (First Steps)"
+title: "My Turnip Merge Quest: Setup, Device, and Build"
 category: "MyTurnipMergeQuest"
 order: 2
-date: 2025-12-05
 description: "Hey there, earthling! Welcome to my series of blogs/tutorials related to contrubuting to the Turnip driver from Mesa."
 tags:
   - MyTurnipMergeQuest
@@ -19,10 +18,21 @@ hideTOC: false
 targetKeyword: mtmq dayZero
 draft: false
 ---
+<center>
+
+# Leaving the Shire
+
 ![alt](https://images.unsplash.com/photo-1738998725908-43c8ab741913?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 *Image from [DJ](https://unsplash.com/@djthoms) - [Unsplash](https://unsplash.com/)*
 
-Probably this blog will be long, so have patience with it e.e. My plan for this blog is to share my setup and help you to leave everything ready to develop comfortably on Turnip, and this means connecting with other developers/communities that will help you through this journey (by gathering info and help), why and how to choose one or another hardware for Turnip, how to configure and leave the hardware prepared for development, and also how to set up Turnip on that hardware. Like I've already mentioned in previous blogs, ***I'm sharing my own journey in hopes to helping others. This may or may not be the optimal way, it's simply my way.***
+Probably this post will be long, so have patience with it e.e. My plan for this post is to **share my setup and help you to leave everything ready to develop comfortably on** [Turnip](posts/myturnipmergequest0#goal), and this means connecting with other developers/communities that will help you through this journey (by gathering info and help), why and how to choose one or another hardware for Turnip, how to configure and leave the hardware prepared for development, and also how to set up Turnip on that chosen hardware. 
+
+</center>
+
+> [!caution]
+> My objective for this series is to document my own journey in hopes that it might help others along the way. This is not a tutorial/manual on the 'best' way to do things. It's just my personal experience. I hope it helps you find your own path :)
+
+---
 
 ## Communication
 
@@ -157,8 +167,8 @@ Depending on your budget and preferences, you will choose one or another. In my 
 
 Since I already had the GPU model and the type of device, the brand didn't matter in my case, so I searched for the cheapest option. In this case ***I chose the OnePlus Pad 2**.
 
-FOTO PAMPU
-* My cat bendiciendo para que pueda cumplir mi quest
+![[onePlusPad2.jpg]]
+*Image from [w0rmi](https://w0rmi.github.io/about/)*
 
 Luckily, I could get a very cheap second hand one here in Germany.
 

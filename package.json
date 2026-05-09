@@ -70,7 +70,7 @@
     "wrangler": "^4.46.0"
   },
   "pnpm": {
-    "allowedBuildScripts": [
+    "onlyBuiltDependencies": [
       "sharp",
       "esbuild",
       "workerd"

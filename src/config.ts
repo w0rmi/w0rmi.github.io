@@ -290,19 +290,19 @@ export const siteConfig: SiteConfig = {
   // Profile Picture
   profilePicture: {
     // [CONFIG:PROFILE_PICTURE_ENABLED]
-    enabled: false, 
+    enabled: true, 
     // [CONFIG:PROFILE_PICTURE_IMAGE]
-    image: "/profile.jpg", // Path to your profile image (place in public/ directory)
+    image: "/favicon.png", // Path to your profile image (place in public/ directory)
     // [CONFIG:PROFILE_PICTURE_ALT]
     alt: "Profile picture",
     // [CONFIG:PROFILE_PICTURE_SIZE]
-    size: "md", // "sm" (32px), "md" (48px), or "lg" (64px) - only affects footer placement
+    size: "lg", // "sm" (32px), "md" (48px), or "lg" (64px) - only affects footer placement
     // [CONFIG:PROFILE_PICTURE_URL]
     url: "", // Optional
     // [CONFIG:PROFILE_PICTURE_PLACEMENT]
-    placement: "footer", // "footer" or "header"
+    placement: "header", // "footer" or "header"
     // [CONFIG:PROFILE_PICTURE_STYLE]
-    style: "circle", // "circle", "square", or "none"
+    style: "none", // "circle", "square", or "none"
   },
 
   // Navigation

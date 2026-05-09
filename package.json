@@ -75,5 +75,10 @@
       "esbuild",
       "workerd"
     ]
-  }
+  },
+  "onlyBuiltDependencies": [
+    "sharp",
+    "esbuild",
+    "workerd"
+  ]
 }

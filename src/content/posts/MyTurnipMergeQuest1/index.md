@@ -1,6 +1,7 @@
 ---
 title: "My Turnip Merge Quest: How I Chose Turnip for My First OSS Contribution"
 category: "MyTurnipMergeQuest"
+date: 2025-11-26
 order: 1
 description: "Hey there, earthling!"
 tags:

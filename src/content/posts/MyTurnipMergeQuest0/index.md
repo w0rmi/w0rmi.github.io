@@ -2,6 +2,7 @@
 title: "My Turnip Merge Quest: Day Zero"
 category: "MyTurnipMergeQuest"
 order: 0
+date: 2025-11-16
 description: Hey there, earthling! Welcome to my series of blogs/tutorials related to contrubuting to the Turnip driver from Mesa.
 tags:
   - MyTurnipMergeQuest
@@ -11,7 +12,7 @@ tags:
   - linux
   - android
   - tutorial
-image: "[[https://images.unsplash.com/photo-1682685795463-0674c065f315?q=80&w=1452&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D]]"
+image: "[[https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D]]"
 imageOG: true
 hideCoverImage: true
 hideTOC: false
@@ -23,8 +24,8 @@ draft: false
 
 # Day Zero
 
-![alt](https://images.unsplash.com/photo-1682685795463-0674c065f315?q=80&w=1452&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
-*Image from [NEOM](https://unsplash.com/@neom) - [Unsplash](https://unsplash.com/)*
+![alt](https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+*Image from [Dariusz Sankowski](https://unsplash.com/@dariuszsankowski) - [Unsplash](https://unsplash.com/)*
 
 **Hey there, earthling!**  Welcome to my series of posts/tutorials (I hope to make many of them... at least enough to call it a series e.e). I plan to share the knowledge I'll be gathering along this journey as I make my first contribution to the open-source world, specifically to the **Mesa-Turnip** project.
 

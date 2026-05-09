@@ -1,8 +1,8 @@
 ---
 title: "My Turnip Merge Quest: Troubleshooting Bible"
 category: "My Turnip Merge Quest"
-order: 99
-date: 2025-11-17
+date: 2026-05-09
+order: 0
 description: Hey there, earthling! 
 tags:
   - MyTurnipMergeQuest
@@ -17,7 +17,7 @@ imageOG: true
 hideCoverImage: true
 hideTOC: false
 targetKeyword: mtmq troubleBible
-draft: false
+draft: true
 ---
 
 

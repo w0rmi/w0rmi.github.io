@@ -1,6 +1,7 @@
 ---
-title: "My Turnip Merge Quest: Setup, Device, and Build"
+title: "My Turnip Merge Quest: Choosing the Right Hardware"
 category: "MyTurnipMergeQuest"
+date: 2025-12-03
 order: 2
 description: "Hey there, earthling! Welcome to my series of blogs/tutorials related to contrubuting to the Turnip driver from Mesa."
 tags:
@@ -11,7 +12,7 @@ tags:
   - linux
   - android
   - tutorial
-image: "[[https://images.unsplash.com/photo-1738998725908-43c8ab741913?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D]]"
+image: "[[https://images.unsplash.com/photo-1711369093144-2ada6e035a84?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D]]"
 imageOG: true
 hideCoverImage: true
 hideTOC: false
@@ -20,12 +21,12 @@ draft: false
 ---
 <center>
 
-# Leaving the Shire
+# Picking our Playground
 
-![alt](https://images.unsplash.com/photo-1738998725908-43c8ab741913?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+![alt](https://images.unsplash.com/photo-1711369093144-2ada6e035a84?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 *Image from [DJ](https://unsplash.com/@djthoms) - [Unsplash](https://unsplash.com/)*
 
-Probably this post will be long, so have patience with it e.e. My plan for this post is to **share my setup and help you to leave everything ready to develop comfortably on** [Turnip](posts/myturnipmergequest0#goal), and this means connecting with other developers/communities that will help you through this journey (by gathering info and help), why and how to choose one or another hardware for Turnip, how to configure and leave the hardware prepared for development, and also how to set up Turnip on that chosen hardware. 
+Hey there, earthling! In this short section, I want to share how I decided which hardware to pick for the [Turnip quest](posts/myturnipmergequest0#goal). Mainly, what things I took into account, the advantages and disadvantages of choosing one hardware or other, among other things. Let's start :D
 
 </center>
 
@@ -34,105 +35,70 @@ Probably this post will be long, so have patience with it e.e. My plan for this 
 
 ---
 
-## Communication
-
-![alt](https://images.unsplash.com/photo-1568258805731-c117485e50c2?q=80&w=772&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
-*Image from [Sandra Tan](https://unsplash.com/@sandratansh) - [Unsplash](https://unsplash.com/)*
-
-First things first, **we need to connect with the people working on the project** obviously! I think one important aspect of working on an OSS project is to get involved and participate, so that's what we'll try to do.
-These are the communications means that I found, but please if you know any other, share it with me and I'll update the list.
-
-### IRC
-
-I won't get into details since there are a lot of better tutorials for that. But, basically it's a **text only chat**, where you need an IRC client to connect to any network. In my case, I use [Halloy](https://halloy.chat/), which works great.
-
-![[halloy.png]]
-*Halloy*
+## How I Chose My Turnip Hardware
 
 
-The server and channels used by or relevant to the Turnip developers are:
+As I already described in the [first post](posts/myturnipmergequest0#goal), **Turnip is a driver used in Adreno devices**. Adreno is present in mobiles, tablets, VR headsets, development boards and also laptops. On top of that, you have several GPU models to chose from. So...what device should we pick? I don't think there is just one answer, so it depends. Our goal for this section is to make it easier to know what Adreno GPU model and device to pick. 
 
-| Server    | irc.oftc.net           |
-| --------- | ---------------------- |
-| Channels  | freedreno && dri-devel |
+### Types of Driver Development
 
-To find old chats, you can check this website:
+![alt](https://images.unsplash.com/photo-1429743305873-d4065c15f93e?q=80&w=1467&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+*Image from [Jens Lelie](https://unsplash.com/@madebyjens) - [Unsplash](https://unsplash.com/)*
 
-https://dri.freedesktop.org/~cbrill/dri-log/index.php
+The first question that I thing we should ask ourselves is **what kind of driver development we want to do**. Answering that will help us to discard options.
 
-### Mailing List
+I've classified Linux GPU driver development into a few very general categories based on my own perspective:
 
-![alt](https://images.unsplash.com/photo-1578655083045-1974aed129e6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
-*Image from [Leksandr Gamaniuk](https://unsplash.com/@oleksander_gamaniuk) - [Unsplash](https://unsplash.com/)*
+- `Functionality Mapping and Feature Implementation`
 
-It's a **subscription mailing list** in which you can ask and answer questions. The discussions will be received weekly? by all the the developers subscribed. I think it's relevant to know the latest discussions and also to ask for help if needed.
+In the case of Turnip, and many more open source drivers, the hardware functionalities of their manufacturers are closed or undocumented. So, developers have to figure out how to communicate with the hardware through reverse engineering and other methods. A very good example is the famous Asahi project. The other part of this is implementing the Vulkan API extensions.
 
-More info here:
+- `Performance & Optimization`
 
-https://docs.mesa3d.org/lists.html
+This involves developing and optimizing the shader compiler (in this case IR3), and also profiling the Vulkan command streams, among other things.
 
-To find old messages, you can check this website:
+- `Bug and Crash Fixing`
 
-https://lists.freedesktop.org/archives/mesa-dev/
+Here we ensure the driver stability and fix graphical artifacts.
 
----
+There are probably more subtypes, but these are the most common ones and the ones that I'm aware of.
 
-## Learning Resources
+#### How Does Knowing the Type of Developtemt Help Us? 
 
-Here I share the resources that will help us along the way. These are the ones that I could find related to Turnip:
+![alt](https://images.unsplash.com/photo-1501770118606-b1d640526693?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+*Image from [Neil Thomas](https://unsplash.com/@finleydesign) - [Unsplash](https://unsplash.com/)*
 
-### Official Documentation and Code
+Since we are complete beginners in driver development, **we should pick the easiest area to start in**, which is without a doubt **bug and crash fixing**. I would really like to start another series of blogs in parallel related to functioanlity mapping and feature implementation (maybe another quest? e.e ) in the near future. I think I'll learn a lot experimenting with it and I'm veeeery curious about it!
 
-![alt](https://images.unsplash.com/photo-1587716283570-f71969a1f854?q=80&w=1465&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
-*Image from [David Nitschke](https://unsplash.com/@david_nitschke_95) - [Unsplash](https://unsplash.com/)*
+Because we will focus on bug and crash fixing, **we should not choose a GPU model that was released very recently**, like e.g the X2 Adreno GPUs (which were released about a month ago at the time that I'm writing this).
 
-Obviously the most important documentation is the official one. Sadly, it has some outdated information, but it is nevertheless still very relevant.
+==Why==? Because Turnip (and neither Linux) is not stable at all in those GPUs (yet!). They likely have too many bugs and a too much room for improvement. For a new graphics driver developer, would this be ok? I don't think so. If you can't properly set up a basic environment or have a more or less stable ground to test things, it would probably be a nightmare for a new developer.
 
-https://docs.mesa3d.org/drivers/freedreno.html
-
-### Tutorials
-
-#### Danylo Piliaiev Tutorials
-
-Extremely helpful and also they are made by one of the main developers of Turnip. In their blog, they share info on how to debug Turnip.
-
-https://blogs.igalia.com/dpiliaiev/turnips-in-the-wild-part-1/
-
-#### Lucas Francisco Fryzek Tutorials
-
-Same, very helpful tutorials, in this case made and shared by Lucas, another important developer from [Igalia](https://www.igalia.com/). 
-
-https://fryzekconcepts.com/index.html
-
-### Conference Speeches
-
-Like I already shared on this [post](/posts/myturnipmergequest1#oss-conferences), there are several conferences related to the graphic stack. If you search for X conference + Turnip or Vulkan, you will find a lot of speeches with a lot of helpful information. I'll not share them all here since there are a lot and depending on what part of Turnip you are specifically working on, you will need one or another, but I thought it was important to mention it.
+On the other hand, if we had chosen Functionality Mapping, picking a very recent GPU would be a great idea, since there would be a lot of room that kind of work, But for our current goal, stability is better.
 
 ---
 
-## Choosing the Right Hardware
+### Choosing our GPU Model
 
-![alt](https://images.unsplash.com/photo-1697465379722-98040bb9c509?q=80&w=1750&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
-*Image from [nik radzi](https://unsplash.com/@nradzi) - [Unsplash](https://unsplash.com/)*
+![alt](https://images.unsplash.com/photo-1717667745934-53091623e8ee?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+*Image from [Nathan Cima](https://unsplash.com/@nathan_cima) - [Unsplash](https://unsplash.com/)*
 
-Like I already described in the [first post](posts/myturnipmergequest0#goal), Turnip is a driver used for Adreno devices. Adreno is present in several mobiles, tablets, and also laptops. So... which one to pick? I don't think there is just one answer, so it depends... In my case I use these heuristics:
+Knowing the type of development we want to do, and that picking the latest GPU model relased is not a good idea, we can also conclude that:
 
 - The older the hardware, the more likely it has better support, and better support = less need for development = fewer developers.
-- Better support also means = less room for fixing, so the things to improve would be harder to catch (probably) and harder for newer developers like me (and maybe you?).
+- Better support also means = less room for fixing, so the things to improve would be harder to catch (probably) and harder for newer developers like me.
 
-Trusting that these heuristics have something of truth, we can make the next conclusion:
+Assuming all those statements have some truth, we can make the following conclusion:
 
 ==We need to pick a hardware that is not very old and is still relevant today.==
 
-Ok, but *what happens if it's new, like the X2 Adreno GPUs?* At the time that I'm writing this, they came out like a week ago. They will probably have a lot of bugs and a lot of room for improvement. But for a new graphics driver developer, would this be ok? I don't think so. If you can't properly set up a basic setup or have a more or less stable ground to test things, it would be really hard probably for a new developer.
-
 So... based on that, I would need to pick up something that is:
 
-==Neither old nor fresh out of the oven e.e==
+==Neither old nor fresh out of the oven.==
 
 Like all things in life...**something in the middle**. But which one?
 
-These are the Adreno GPUs available and the years in which they have been released:
+These are the Adreno GPUs available and the years in which they were released:
 
 | Architecture   | GPU Model           | Release      |
 | :------------- | :----------------   | :---         | 
@@ -143,180 +109,51 @@ These are the Adreno GPUs available and the years in which they have been releas
 |   Adreno 800   | Adreno 830          | 2025         | 
 |   Adreno X2    | Adreno X2 Series    | 2026         | 
 
-Ok, something in the middle, let's see what people are using! If more people are using it, it is probably relevant and means more developers working on it.
+Ok, something in the middle...Let's see what people are using! If more people are using it, it is probably relevant, which means more developers are working on it.
 
-Like I already mentioned in the other [post](posts/myturnipmergequest1#how-i-ended-up-choosing-turnip), the subreddits related to emulation are full of people trying very cool stuff on mobiles/tablets. So I started exploring what were the most used devices and came to the conclusion that the Snapdragon 8 Gen 3 GPUs were very used lately.
+As I already mentioned in the other [post](posts/myturnipmergequest1#how-i-ended-up-choosing-turnip), the subreddits related to emulation on Android are full of people trying very cool stuff on mobiles and tablets. I started exploring what were the most used devices and saw that the **Snapdragon 8 Gen 3 GPUs** have been very popular lately.
 
-Ok, that series seems like "the middle", but the info that made me decide which one to pick was the Steam Frame. That device was announced at the end of last year, saying that they will use... YES, an Adreno GPU, and that Adreno GPU is the 750 one.
+That series seems like "the middle", but the info that finally made me decide was the Steam Frame. That device was announced at the end of last year, stating that it will use... YES, an Adreno GPU. Specifically `the Adreno 750` :)
 
 ![alt](https://clan.fastly.steamstatic.com/images/45479024/41ac1feaa13a1396844a31be91beb068eb2e509f.jpg)
 *Image from [Valve Corporation](https://www.valvesoftware.com/en/)*
 
-- [X] Relevance. // Super check.
-- [X] Neither old nor out of the oven. // Check.
+- [X] Relevance -> Super check.
+- [X] Neither old nor out of the oven -> Check.
 
-Done, decision made ;)
+==Done, decision made, the Adreno 750 it would be ;)==
+
+---
+
+### Choosing our Device
+
+![alt](https://images.unsplash.com/photo-1697465379722-98040bb9c509?q=80&w=1750&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+*Image from [Jinhan Moon](https://unsplash.com/@jinhan_photo) - [Unsplash](https://unsplash.com/)*
+
 
 > [!info]
-> The Adreno 750 GPU is in different devices: mobiles, tablets and on development boards.
+> The Adreno 750 GPU is present only in these devices: mobiles, tablets and on development boards.
 
 Depending on your budget and preferences, you will choose one or another. In my case, **I wanted something cheap and also that would be easy to debug.**
 
-. In the case of the development board, it is the most confortable one to develop but very expensive, so I discarded it.
+Based on that, I made the following conclusions:
 
-. Mobile vs tablet: well, I would like something that is easier to see glitches and errors, so this measn bigger screen = tablet. 
+. `The Development Board`: This is the most comfortable one to develop on, but they are very expensive, so I discarded it.
 
-Since I already had the GPU model and the type of device, the brand didn't matter in my case, so I searched for the cheapest option. In this case **I chose the OnePlus Pad 2**.
+. `Mobile vs Tablet`: I wanted something where it is easier to see glitches and errors, so this measn bigger screen -> tablet. The downside of picking either of the two is Android. It would be much easier to debug on Linux, but I'll get use to it ;).
+
+At the end **I decided to pick a tablet** based on this.
+
+Since I already knew the GPU model and the type of device I wanted, the brand didn't matter much. I searched for the cheapest option and **chose the OnePlus Pad 2**. Luckily, I could get a very cheap second hand one here in Germany.
 
 > [!caution]
 > Search for a device that is easy to root. This means that the manufacturer provides documentation on how to unlock the bootloader. In the case of the OnePlus, it was a perfect choise.
 
-
 ![[onePlusPad2.jpg]]
 *Image from [w0rmi](https://w0rmi.github.io/about/)*
 
-Luckily, I could get a very cheap second hand one here in Germany.
-
 > [!important]
->Since I chose a GPU that is used on Android devices, some explanations will be specific to Android (at least at the beginning of the series). In the future, I plan to develop on the Adreno X1 GPUs, but only after I finish this quest. Since debugging on those laptops is easier than on Android, but with the current prices, I'll wait e.e.
+>Since I've chosen an Android device, some future explanations will be specific to Android (at least at the beginning of the series).
 
----
+==Now we have our hardware to start our quest :)==
 
-## Preparing the Android Device for Turnip
-
-![alt](https://images.unsplash.com/photo-1771366629891-9db2a25481f6?q=80&w=1744&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
-*Image from [Calvin Wise](https://unsplash.com/@wiseboysca) - [Unsplash](https://unsplash.com/)*
-
-You have two options for using Turnip on Android: **either you use it internally through an emulator, or you use the driver in the whole OS**. The latter option is better since debugging through an emulator would be painful.
-
-Changing the graphic driver in our Android OS is not so easy as in Linux, but neither it is too hard (for now...). I'll share what I did to leave my tablet ready for using Turnip.
-
-### Rooting the Android Device
-
-![alt](https://images.unsplash.com/photo-1592921195496-6ff2e332c0f6?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
-*Image from [Vanna Phon](https://unsplash.com/@phonvanna) - [Unsplash](https://unsplash.com/)*
-
-==Why do we need to root our device?== Because we need to make the OS use a different graphic driver instead from the proprietary one that comes with the device, which means that we need to "modify" OS files or trick the system so that it uses other files, which I'll explain further!
-
-#### Unlocking the Bootloader
-
-Before rooting our device, we need to unlock the bootloader. I won't explain how, since depending on your device the method will differ, and also doing this is not possible on all Android devices. It depends on the manufacturer. They need to allow OEM unlocking. In my case, OnePlus is very friendly to bootloader unlocking, so I didn't have any problem.
-
-> [!caution]
-> Please, you need to know that unlocking the bootloader will trigger a factory reset (it will wipe all data) and may disable high security apps like banking apps, so do it at your own risk. My recommendation is to not use your daily device for this kind of development.
-
-Without going into details the general steps (which may differ in your case) were these in my case:
-
-1. Unlock the Developer Options in your device (if you haven't already).
-2. In Developer Options on your Android: Enable OEM Unlocking (it's like telling your device "I authorize the bootloader to be unlocked") and USB Debugging (to send commands to the device from your PC).
-3. Connect your device using a USB to your PC, and in a terminal:
-    adb reboot bootloader (to enter into the Bootloader Mode).
-4. Once in Bootloader Mode, in your terminal type:
-    fastboot flashing unlock // On your device, a message confirmation for unlocking the bootloader will pop up -> confirm it.
-
-Now that we have our device with the bootloader unlocked, we can root our device :D
-
-#### Magisk
-
-The easiest and the most common way to root an Android device at the moment that I'm writing this.....is Magisk. 
-
-> [!note] Magisk
-> In short, it is a systemless tool. This means that it doesn't need to override the original OS files to make changes, by creating an overlay file system. This is very helpful since if we push some change that produces an error or crash, it won't break our OS. We can just switch back to whatever state we had before.
-
-https://github.com/topjohnwu/Magisk
-
-In my case, these were the steps that I followed to install Magisk:
-
-1. Search for and download the OTA file specific to your device, version, and region.
-
-    - To find the version: Settings -> About Device -> Version -> Here you will find the build number.
-    - To find the region: At the end of the build number, you will see one of of these -> EU/GLO/NA/IN.
-
-> [!note] OTA
-> It's just the official software update for your device. Depending on the manufaturer, you will have to find it on their website. Inside, it contains all the files needed for updating your device. This includes init_boost.img (the one we need), boot.img (contains the Linux kernel), system.img (the actual Android OS), etc. 
-
-> [!question]
-> Why do we need it? Because Magisk needs to inject its code into the device during the startup process, and that process is inside the file init_boot.img. Since we can't download that file alone, we need to extract it from the OTA. Magisk patches that file, and creates the overlay filesystem that grants the root control.
-
-2. Extract the init_boot.img from the payload.bin inside the OTA, and then send it to your device.
-
-    - I used this tool to extract it from the payload.bin:
-
-https://github.com/ssut/payload-dumper-go
-
-3. Install the Magisk APK from the [official repo](https://github.com/topjohnwu/Magisk) and select the init_boot.img that you already sent.
-
-    - In this step, Magisk will add the "root access code" to the init_boot.img and it will repack it into a new file called "magisk_patched.img"
-
-4. Move the file generated by Magisk to your PC and flash your device with it.
-
-    ```bash
-    adb reboot bootloader // to get into the Bootloader Mode
-    fastboot flash init_boot magisk_patched.img
-    fastboot reboot
-    ```
-
-5. Done :D, check that in the magisk app it says Installed.
-
-FOTO PULGAR ARRIBA CON LA APP
-
-### Configuring Android
-
-Deactivate gaming? how. Max  refresh rae, setting battery max, etc.
-
----
-
-## Installing Turnip on your Android Device
-
-We are almost there! For having Turnip running on our device, we need to 2 more things: build Turnip and ship it in a Magisk module to our device.
-
-> [!note] Magisk Modules
-> Like we already know, Magisk allows us to give root access to apps and also to make systemless modifications. Those systemless modifications are done through modules. In this case, we'll pack our Turnip .so file into a Magisk module to make the OS use it instead of the proprietary one.
-
-### Building and Injecting Turnip
-
-Since we plan to contribute to the Turnip project, obviously we need to learn how to build it! I won't get into much details, since there are already tutorials explaining this, and I don't see the point of repeating something that is perfectly explained e.e, but I'll write an overview of what you need to do and also share the resources/tutorial that helped me.
-
-It's important to notice that I'm using Ubuntu for this, so the steps may differ from yours!
-
-#### Prerequisites
-
-- Download Mesa... duh!.
-- Download the Android NDK (the latest, it doesn't have to match the Android version of your device, as that will be adjusted during the building).
-- Install all the library dependencies specified in the tutorials attached below.
-
-> [!note] Android NDK
-> The NDK is basically a toolset that allows us to implement parts of Android applications using native code languages like C, C++, and Rust, and also gives us tools for cross-compilation.
-
-Why is it helpful in this case? Well, Turnip belongs to Mesa, and Mesa is written in C and C++ mostly, which means that we need the NDK to compile that C/C++ code into a .so file (libvulkan_mesa.so).
-
-Why a .so file? Because you are probably building the Turnip driver on a x86_64 PC and your Android device uses an ARM64 processor. This means a different architecture, so you need to translate that C/C++ code into instructions that the ARM processor and the Adreno GPU can actually execute.
-
-https://developer.android.com/ndk/downloads
-
----
-
-#### Steps
-
-Already having all the prerequisites, these are the steps for building it. If you need more details, please see the links attached below in [[Resources]].
-
-- Create a Meson cross-file: this file tells Meson where your NDK is located and what tools to use instead of the Linux ones.
-- Generate the build environment: here you specify what driver to build, the cross-file location, etc, and the makefile.
-- Compile the driver: Here I used ninja to execute the compilation by specifying the build directory to search for instructions (the makefiles).
-- Inject Turnip into your Android divice using Magisk Modules; The scrip is in the link resources.
-
-Voila! Now, straight out of the oven, we have our delicious Turnip driver (libvulkan_mesa.so) ready for use :)
-
-![alt](https://images.unsplash.com/photo-1693307090398-2a6d5cc39c77?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
-*Image from [Anna Ansone](https://unsplash.com/@simplyanna) - [Unsplash](https://unsplash.com/)*
-
-#### Resources
-
--  İlhan Atahan  - Script for building turnip driver as a magisk module from mesa repository.https://github.com/ilhan-athn7/freedreno_turnip-CI
--  Shankar Vallabhan - Script for building Freedreno Turnip Vulkan Driver as a Module for Magisk or Emulators. https://github.com/v3kt0r-87/Mesa-Turnip-Builder?tab=readme-ov-file
-- Lucas Fryzek - Freedreno on Android https://www.youtube.com/watch?v=BrAptxshgPc
-
-
-
-
-! Specify that in driver development you have 2 options mapping of functionality

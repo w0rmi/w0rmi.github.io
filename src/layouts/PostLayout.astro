@@ -72,7 +72,7 @@ const shouldShowTOC = !hideTOC && siteConfig.tableOfContents.enabled && headings
 const toc = shouldShowTOC ? await generateTOC(headings) : [];
 
 // Get adjacent posts for navigation
-const { prev: prevPost, next: nextPost } = getAdjacentPosts(visiblePosts, post.id);
+const { prev: nextPost, next: prevPost } = getAdjacentPosts(visiblePosts, post.id);
 
 // Check if current post has connections for LocalGraph
 let hasLocalGraphConnections = false;

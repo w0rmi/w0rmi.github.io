@@ -290,7 +290,7 @@ export const siteConfig: SiteConfig = {
   // Profile Picture
   profilePicture: {
     // [CONFIG:PROFILE_PICTURE_ENABLED]
-    enabled: true, 
+    enabled: false, 
     // [CONFIG:PROFILE_PICTURE_IMAGE]
     image: "/favicon.png", // Path to your profile image (place in public/ directory)
     // [CONFIG:PROFILE_PICTURE_ALT]

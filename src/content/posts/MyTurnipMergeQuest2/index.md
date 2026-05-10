@@ -74,7 +74,7 @@ Because we will focus on bug and crash fixing, **we should not choose a GPU mode
 
 ==Why==? Because Turnip (and neither Linux) is not stable at all in those GPUs (yet!). They likely have too many bugs and a too much room for improvement. For a new graphics driver developer, would this be ok? I don't think so. If you can't properly set up a basic environment or have a more or less stable ground to test things, it would probably be a nightmare for a new developer.
 
-On the other hand, if we had chosen Functionality Mapping, picking a very recent GPU would be a great idea, since there would be a lot of room that kind of work, But for our current goal, stability is better.
+On the other hand, if we had chosen Functionality Mapping, picking a very recent GPU would be a great idea, since there would be a lot of room that kind of work. But for our current goal, stability is better.
 
 ---
 
@@ -113,7 +113,7 @@ Ok, something in the middle...Let's see what people are using! If more people ar
 
 As I already mentioned in the other [post](posts/myturnipmergequest1#how-i-ended-up-choosing-turnip), the subreddits related to emulation on Android are full of people trying very cool stuff on mobiles and tablets. I started exploring what were the most used devices and saw that the **Snapdragon 8 Gen 3 GPUs** have been very popular lately.
 
-That series seems like "the middle", but the info that finally made me decide was the Steam Frame. That device was announced at the end of last year, stating that it will use... YES, an Adreno GPU. Specifically `the Adreno 750` :)
+That series seems like "the middle", but the info that finally made me decide was the Steam Frame. That device was announced at the end of last year, stating that it will use... YES, an Adreno GPU. Specifically `the Adreno 750` :) , which belongs to the Snapdragon 8 Gen 3 family.
 
 ![alt](https://clan.fastly.steamstatic.com/images/45479024/41ac1feaa13a1396844a31be91beb068eb2e509f.jpg)
 *Image from [Valve Corporation](https://www.valvesoftware.com/en/)*

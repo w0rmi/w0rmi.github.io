@@ -17,7 +17,7 @@ imageOG: true
 hideCoverImage: true
 hideTOC: false
 targetKeyword: mtmq dayZero
-draft: false
+draft: true
 ---
 <center>
 

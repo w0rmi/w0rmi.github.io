@@ -9,9 +9,21 @@ aliases:
   - about-us
 ---
 
-## Hi!
+<div style="display: grid; grid-template-columns: 50% 1fr; gap: 4%; align-items: center; margin-bottom: 2rem;">
+  <figure>
+    <img src="/attachments/aboutProfile.jpg" alt="PampuAndMe" style="width: 100%; height: auto; border-radius: 8px;" />
+    <figcaption>
+        The picture shows me and the princess of the house, Pampushka :)
+    </figcaption>
+  </figure>
+  <div>
+    <h3 style="margin-top: 0;">Hey!</h3>
+    <p style="margin: 0;">
+    I'm Santiago, Argentinian 🇦🇷 currently living in Barcelona. I'm a rendering software engineer now diving into GPU drivers. Interested in everything related to computer graphics, creative coding, Linux and synthesizers! 
+    </p>
+  </div>
+</div>
 
-Being honest, I hate describing myself or labeling myself....which I'm also not very good at anyway, so I'll just say that I'm Santiago. I'm just a simple human trying to be happy in this one life that we were lucky enough to get, doing what I enjoy and sharing it with others. Because at the end of the day, that is the only thing that matters, sharing...Hope you are doing well, and nice to meet you :)
 
 ---
 

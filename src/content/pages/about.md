@@ -19,7 +19,7 @@ aliases:
   <div>
     <h3 style="margin-top: 0;">Hey!</h3>
     <p style="margin: 0;">
-    I'm Santiago, Argentinian 🇦🇷 currently living in Barcelona. I'm a rendering software engineer now diving into GPU drivers. Interested in everything related to computer graphics, creative coding, Linux and synthesizers! 
+    I'm Santiago, Argentinian 🇦🇷 currently living in Barcelona. I'm a rendering software engineer now diving into GPU drivers. Interested in everything related to computer graphics, creative coding, Linux, mtg and synthesizers! 
     </p>
   </div>
 </div>
